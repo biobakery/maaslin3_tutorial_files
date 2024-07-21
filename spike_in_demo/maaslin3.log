@@ -1,0 +1,272 @@
+2024-07-21 13:28:05.642757 INFO::Writing function arguments to log file
+2024-07-21 13:28:05.643132 DEBUG::Function arguments
+2024-07-21 13:28:05.643278 DEBUG::Output folder: spike_in_demo
+2024-07-21 13:28:05.643404 DEBUG::Min Abundance: 0.000000
+2024-07-21 13:28:05.643524 DEBUG::Zero Threshold: 0.000000
+2024-07-21 13:28:05.643644 DEBUG::Min Prevalence: 0.000000
+2024-07-21 13:28:05.643757 DEBUG::Normalization: TSS
+2024-07-21 13:28:05.643868 DEBUG::Transform: LOG
+2024-07-21 13:28:05.643998 DEBUG::Max significance: 0.100000
+2024-07-21 13:28:05.644112 DEBUG::Random effects:
+2024-07-21 13:28:05.644224 DEBUG::Fixed effects:
+2024-07-21 13:28:05.644345 DEBUG::Group effects:
+2024-07-21 13:28:05.644468 DEBUG::Ordered effects:
+2024-07-21 13:28:05.644583 DEBUG::Formula: ~ Metadata_1 + Metadata_2 + Metadata_3 + Metadata_4 + Metadata_5
+2024-07-21 13:28:05.644695 DEBUG::Correction method: BH
+2024-07-21 13:28:05.644804 DEBUG::Standardize: TRUE
+2024-07-21 13:28:05.644915 DEBUG::Augment: TRUE
+2024-07-21 13:28:05.645029 DEBUG::Cores: 1
+2024-07-21 13:28:05.64514 DEBUG::Abundance median comparison: FALSE
+2024-07-21 13:28:05.645246 DEBUG::Prevalence median comparison: FALSE
+2024-07-21 13:28:05.645356 DEBUG::Abundance median comparison threshold: 0.25
+2024-07-21 13:28:05.645465 DEBUG::Prevalence median comparison threshold: 0.25
+2024-07-21 13:28:05.645612 INFO::Verifying options selected are valid
+2024-07-21 13:28:05.645935 INFO::Determining format of input files
+2024-07-21 13:28:05.646167 INFO::Input format is data samples as columns and metadata samples as rows
+2024-07-21 13:28:05.646786 DEBUG::Transformed data so samples are rows
+2024-07-21 13:28:05.647051 DEBUG::A total of 100 samples were found in both the data and metadata
+2024-07-21 13:28:05.647215 DEBUG::Using unscaled abundance as spike-in feature
+2024-07-21 13:28:05.647334 DEBUG::Reordering data/metadata to use same sample ordering
+2024-07-21 13:28:05.648059 INFO::Formula for fixed effects: expr ~ Metadata_1 + Metadata_2 + Metadata_3 + Metadata_4 + Metadata_5
+2024-07-21 13:28:05.648337 INFO::Filter data based on min abundance and min prevalence
+2024-07-21 13:28:05.648535 INFO::Total samples in data: 100
+2024-07-21 13:28:05.648727 INFO::Min samples required with min abundance for a feature not to be filtered: 0.000000
+2024-07-21 13:28:05.662069 INFO::Total filtered features: 11
+2024-07-21 13:28:05.66249 INFO::Filtered feature names from abundance and prevalence filtering: Feature2, Feature7, Feature11, Feature13, Feature50, Feature57, Feature70, Feature73, Feature77, Feature90, Feature92
+2024-07-21 13:28:05.663898 INFO::Total filtered features with variance filtering: 0
+2024-07-21 13:28:05.664257 INFO::Filtered feature names from variance filtering:
+2024-07-21 13:28:05.664513 INFO::Creating output feature tables folder
+2024-07-21 13:28:05.664844 INFO::Writing filtered data to file spike_in_demo/features/filtered_data.tsv
+2024-07-21 13:28:05.667022 INFO::Applying z-score to standardize continuous metadata
+2024-07-21 13:28:05.669705 INFO::Running selected normalization method: TSS
+2024-07-21 13:28:05.672497 INFO::Writing filtered, normalized data to file spike_in_demo/features/filtered_data_norm.tsv
+2024-07-21 13:28:05.675214 INFO::Running selected transform method: LOG
+2024-07-21 13:28:05.676247 INFO::Writing filtered, normalized, transformed data to file spike_in_demo/features/filtered_data_norm_transformed.tsv
+2024-07-21 13:28:05.679281 INFO::Running the linear model (LM) component
+2024-07-21 13:28:05.681272 INFO::Fitting model to feature number 1, Feature1
+2024-07-21 13:28:05.684206 INFO::Fitting model to feature number 2, Feature3
+2024-07-21 13:28:05.686376 INFO::Fitting model to feature number 3, Feature4
+2024-07-21 13:28:05.688452 INFO::Fitting model to feature number 4, Feature5
+2024-07-21 13:28:05.691212 INFO::Fitting model to feature number 5, Feature6
+2024-07-21 13:28:05.693497 INFO::Fitting model to feature number 6, Feature8
+2024-07-21 13:28:05.695571 INFO::Fitting model to feature number 7, Feature9
+2024-07-21 13:28:05.697603 INFO::Fitting model to feature number 8, Feature10
+2024-07-21 13:28:05.6997 INFO::Fitting model to feature number 9, Feature12
+2024-07-21 13:28:05.701716 INFO::Fitting model to feature number 10, Feature14
+2024-07-21 13:28:05.702845 INFO::Fitting model to feature number 11, Feature15
+2024-07-21 13:28:05.704695 INFO::Fitting model to feature number 12, Feature16
+2024-07-21 13:28:05.706715 INFO::Fitting model to feature number 13, Feature17
+2024-07-21 13:28:05.707909 INFO::Fitting model to feature number 14, Feature18
+2024-07-21 13:28:05.709758 INFO::Fitting model to feature number 15, Feature19
+2024-07-21 13:28:05.711562 INFO::Fitting model to feature number 16, Feature20
+2024-07-21 13:28:05.713404 INFO::Fitting model to feature number 17, Feature21
+2024-07-21 13:28:05.715281 INFO::Fitting model to feature number 18, Feature22
+2024-07-21 13:28:05.716252 WARNING::Fitting problem for feature 18 returning NA
+2024-07-21 13:28:05.717186 INFO::Fitting model to feature number 19, Feature23
+2024-07-21 13:28:05.718166 WARNING::Fitting problem for feature 19 returning NA
+2024-07-21 13:28:05.718914 INFO::Fitting model to feature number 20, Feature24
+2024-07-21 13:28:05.72079 INFO::Fitting model to feature number 21, Feature25
+2024-07-21 13:28:05.722627 INFO::Fitting model to feature number 22, Feature26
+2024-07-21 13:28:05.724487 INFO::Fitting model to feature number 23, Feature27
+2024-07-21 13:28:05.726281 INFO::Fitting model to feature number 24, Feature28
+2024-07-21 13:28:05.727348 INFO::Fitting model to feature number 25, Feature29
+2024-07-21 13:28:05.72912 INFO::Fitting model to feature number 26, Feature30
+2024-07-21 13:28:05.731075 INFO::Fitting model to feature number 27, Feature31
+2024-07-21 13:28:05.732254 INFO::Fitting model to feature number 28, Feature32
+2024-07-21 13:28:05.733447 WARNING::Fitting problem for feature 28 returning NA
+2024-07-21 13:28:05.734283 INFO::Fitting model to feature number 29, Feature33
+2024-07-21 13:28:05.736289 INFO::Fitting model to feature number 30, Feature34
+2024-07-21 13:28:05.738423 INFO::Fitting model to feature number 31, Feature35
+2024-07-21 13:28:05.740372 INFO::Fitting model to feature number 32, Feature36
+2024-07-21 13:28:05.742321 INFO::Fitting model to feature number 33, Feature37
+2024-07-21 13:28:05.744519 INFO::Fitting model to feature number 34, Feature38
+2024-07-21 13:28:05.746507 INFO::Fitting model to feature number 35, Feature39
+2024-07-21 13:28:05.748462 INFO::Fitting model to feature number 36, Feature40
+2024-07-21 13:28:05.750445 INFO::Fitting model to feature number 37, Feature41
+2024-07-21 13:28:05.75163 INFO::Fitting model to feature number 38, Feature42
+2024-07-21 13:28:05.753557 INFO::Fitting model to feature number 39, Feature43
+2024-07-21 13:28:05.761544 INFO::Fitting model to feature number 40, Feature44
+2024-07-21 13:28:05.764586 INFO::Fitting model to feature number 41, Feature45
+2024-07-21 13:28:05.767552 INFO::Fitting model to feature number 42, Feature46
+2024-07-21 13:28:05.769179 INFO::Fitting model to feature number 43, Feature47
+2024-07-21 13:28:05.772214 INFO::Fitting model to feature number 44, Feature48
+2024-07-21 13:28:05.77476 INFO::Fitting model to feature number 45, Feature49
+2024-07-21 13:28:05.776618 INFO::Fitting model to feature number 46, Feature51
+2024-07-21 13:28:05.778509 INFO::Fitting model to feature number 47, Feature52
+2024-07-21 13:28:05.77967 INFO::Fitting model to feature number 48, Feature53
+2024-07-21 13:28:05.780766 INFO::Fitting model to feature number 49, Feature54
+2024-07-21 13:28:05.782565 INFO::Fitting model to feature number 50, Feature55
+2024-07-21 13:28:05.784432 INFO::Fitting model to feature number 51, Feature56
+2024-07-21 13:28:05.786267 INFO::Fitting model to feature number 52, Feature58
+2024-07-21 13:28:05.788114 INFO::Fitting model to feature number 53, Feature59
+2024-07-21 13:28:05.789977 INFO::Fitting model to feature number 54, Feature60
+2024-07-21 13:28:05.79179 INFO::Fitting model to feature number 55, Feature61
+2024-07-21 13:28:05.793642 INFO::Fitting model to feature number 56, Feature62
+2024-07-21 13:28:05.795444 INFO::Fitting model to feature number 57, Feature63
+2024-07-21 13:28:05.797361 INFO::Fitting model to feature number 58, Feature64
+2024-07-21 13:28:05.799252 INFO::Fitting model to feature number 59, Feature65
+2024-07-21 13:28:05.801089 INFO::Fitting model to feature number 60, Feature66
+2024-07-21 13:28:05.802013 WARNING::Fitting problem for feature 60 returning NA
+2024-07-21 13:28:05.802802 INFO::Fitting model to feature number 61, Feature67
+2024-07-21 13:28:05.80468 INFO::Fitting model to feature number 62, Feature68
+2024-07-21 13:28:05.806462 INFO::Fitting model to feature number 63, Feature69
+2024-07-21 13:28:05.808231 INFO::Fitting model to feature number 64, Feature71
+2024-07-21 13:28:05.810078 INFO::Fitting model to feature number 65, Feature72
+2024-07-21 13:28:05.811171 INFO::Fitting model to feature number 66, Feature74
+2024-07-21 13:28:05.812957 INFO::Fitting model to feature number 67, Feature75
+2024-07-21 13:28:05.814763 INFO::Fitting model to feature number 68, Feature76
+2024-07-21 13:28:05.816591 INFO::Fitting model to feature number 69, Feature78
+2024-07-21 13:28:05.817648 INFO::Fitting model to feature number 70, Feature79
+2024-07-21 13:28:05.819417 INFO::Fitting model to feature number 71, Feature80
+2024-07-21 13:28:05.821245 INFO::Fitting model to feature number 72, Feature81
+2024-07-21 13:28:05.823026 INFO::Fitting model to feature number 73, Feature82
+2024-07-21 13:28:05.824807 INFO::Fitting model to feature number 74, Feature83
+2024-07-21 13:28:05.826615 INFO::Fitting model to feature number 75, Feature84
+2024-07-21 13:28:05.828444 INFO::Fitting model to feature number 76, Feature85
+2024-07-21 13:28:05.83027 INFO::Fitting model to feature number 77, Feature86
+2024-07-21 13:28:05.832085 INFO::Fitting model to feature number 78, Feature87
+2024-07-21 13:28:05.833062 WARNING::Fitting problem for feature 78 returning NA
+2024-07-21 13:28:05.83385 INFO::Fitting model to feature number 79, Feature88
+2024-07-21 13:28:05.835723 INFO::Fitting model to feature number 80, Feature89
+2024-07-21 13:28:05.837594 INFO::Fitting model to feature number 81, Feature91
+2024-07-21 13:28:05.839417 INFO::Fitting model to feature number 82, Feature93
+2024-07-21 13:28:05.841251 INFO::Fitting model to feature number 83, Feature94
+2024-07-21 13:28:05.843027 INFO::Fitting model to feature number 84, Feature95
+2024-07-21 13:28:05.844861 INFO::Fitting model to feature number 85, Feature96
+2024-07-21 13:28:05.845804 WARNING::Fitting problem for feature 85 returning NA
+2024-07-21 13:28:05.851937 INFO::Fitting model to feature number 86, Feature97
+2024-07-21 13:28:05.854781 INFO::Fitting model to feature number 87, Feature98
+2024-07-21 13:28:05.857576 INFO::Fitting model to feature number 88, Feature99
+2024-07-21 13:28:05.860274 INFO::Fitting model to feature number 89, Feature100
+2024-07-21 13:28:05.873632 INFO::Counting total values for each feature
+2024-07-21 13:28:05.878665 INFO::Running the logistic model component
+2024-07-21 13:28:05.879486 INFO::Fitting model to feature number 1, Feature1
+2024-07-21 13:28:05.882863 INFO::Fitting model to feature number 2, Feature3
+2024-07-21 13:28:05.886022 INFO::Fitting model to feature number 3, Feature4
+2024-07-21 13:28:05.889177 INFO::Fitting model to feature number 4, Feature5
+2024-07-21 13:28:05.892153 INFO::Fitting model to feature number 5, Feature6
+2024-07-21 13:28:05.895217 INFO::Fitting model to feature number 6, Feature8
+2024-07-21 13:28:05.898554 INFO::Fitting model to feature number 7, Feature9
+2024-07-21 13:28:05.901735 INFO::Fitting model to feature number 8, Feature10
+2024-07-21 13:28:05.904993 INFO::Fitting model to feature number 9, Feature12
+2024-07-21 13:28:05.910177 INFO::Fitting model to feature number 10, Feature14
+2024-07-21 13:28:05.913961 INFO::Fitting model to feature number 11, Feature15
+2024-07-21 13:28:05.917181 INFO::Fitting model to feature number 12, Feature16
+2024-07-21 13:28:05.92023 INFO::Fitting model to feature number 13, Feature17
+2024-07-21 13:28:05.923497 INFO::Fitting model to feature number 14, Feature18
+2024-07-21 13:28:05.926601 INFO::Fitting model to feature number 15, Feature19
+2024-07-21 13:28:05.929691 INFO::Fitting model to feature number 16, Feature20
+2024-07-21 13:28:05.932731 INFO::Fitting model to feature number 17, Feature21
+2024-07-21 13:28:05.935736 INFO::Fitting model to feature number 18, Feature22
+2024-07-21 13:28:05.939032 INFO::Fitting model to feature number 19, Feature23
+2024-07-21 13:28:05.942259 INFO::Fitting model to feature number 20, Feature24
+2024-07-21 13:28:05.945344 INFO::Fitting model to feature number 21, Feature25
+2024-07-21 13:28:05.955918 INFO::Fitting model to feature number 22, Feature26
+2024-07-21 13:28:05.960495 INFO::Fitting model to feature number 23, Feature27
+2024-07-21 13:28:05.965032 INFO::Fitting model to feature number 24, Feature28
+2024-07-21 13:28:05.968964 INFO::Fitting model to feature number 25, Feature29
+2024-07-21 13:28:05.972078 INFO::Fitting model to feature number 26, Feature30
+2024-07-21 13:28:05.975013 INFO::Fitting model to feature number 27, Feature31
+2024-07-21 13:28:05.97819 INFO::Fitting model to feature number 28, Feature32
+2024-07-21 13:28:05.981286 INFO::Fitting model to feature number 29, Feature33
+2024-07-21 13:28:05.98429 INFO::Fitting model to feature number 30, Feature34
+2024-07-21 13:28:05.987293 INFO::Fitting model to feature number 31, Feature35
+2024-07-21 13:28:05.990206 INFO::Fitting model to feature number 32, Feature36
+2024-07-21 13:28:05.993178 INFO::Fitting model to feature number 33, Feature37
+2024-07-21 13:28:05.996163 INFO::Fitting model to feature number 34, Feature38
+2024-07-21 13:28:05.999269 INFO::Fitting model to feature number 35, Feature39
+2024-07-21 13:28:06.002305 INFO::Fitting model to feature number 36, Feature40
+2024-07-21 13:28:06.005153 INFO::Fitting model to feature number 37, Feature41
+2024-07-21 13:28:06.008139 INFO::Fitting model to feature number 38, Feature42
+2024-07-21 13:28:06.010992 INFO::Fitting model to feature number 39, Feature43
+2024-07-21 13:28:06.013874 INFO::Fitting model to feature number 40, Feature44
+2024-07-21 13:28:06.016836 INFO::Fitting model to feature number 41, Feature45
+2024-07-21 13:28:06.019806 INFO::Fitting model to feature number 42, Feature46
+2024-07-21 13:28:06.022793 INFO::Fitting model to feature number 43, Feature47
+2024-07-21 13:28:06.025704 INFO::Fitting model to feature number 44, Feature48
+2024-07-21 13:28:06.028619 INFO::Fitting model to feature number 45, Feature49
+2024-07-21 13:28:06.031671 INFO::Fitting model to feature number 46, Feature51
+2024-07-21 13:28:06.034605 INFO::Fitting model to feature number 47, Feature52
+2024-07-21 13:28:06.037749 INFO::Fitting model to feature number 48, Feature53
+2024-07-21 13:28:06.040803 INFO::Fitting model to feature number 49, Feature54
+2024-07-21 13:28:06.043853 INFO::Fitting model to feature number 50, Feature55
+2024-07-21 13:28:06.053748 INFO::Fitting model to feature number 51, Feature56
+2024-07-21 13:28:06.058211 INFO::Fitting model to feature number 52, Feature58
+2024-07-21 13:28:06.062402 INFO::Fitting model to feature number 53, Feature59
+2024-07-21 13:28:06.066591 INFO::Fitting model to feature number 54, Feature60
+2024-07-21 13:28:06.069963 INFO::Fitting model to feature number 55, Feature61
+2024-07-21 13:28:06.073079 INFO::Fitting model to feature number 56, Feature62
+2024-07-21 13:28:06.075974 INFO::Fitting model to feature number 57, Feature63
+2024-07-21 13:28:06.078993 INFO::Fitting model to feature number 58, Feature64
+2024-07-21 13:28:06.081991 INFO::Fitting model to feature number 59, Feature65
+2024-07-21 13:28:06.08489 INFO::Fitting model to feature number 60, Feature66
+2024-07-21 13:28:06.087898 INFO::Fitting model to feature number 61, Feature67
+2024-07-21 13:28:06.090781 INFO::Fitting model to feature number 62, Feature68
+2024-07-21 13:28:06.093748 INFO::Fitting model to feature number 63, Feature69
+2024-07-21 13:28:06.09674 INFO::Fitting model to feature number 64, Feature71
+2024-07-21 13:28:06.099657 INFO::Fitting model to feature number 65, Feature72
+2024-07-21 13:28:06.102686 INFO::Fitting model to feature number 66, Feature74
+2024-07-21 13:28:06.105664 INFO::Fitting model to feature number 67, Feature75
+2024-07-21 13:28:06.108608 INFO::Fitting model to feature number 68, Feature76
+2024-07-21 13:28:06.11481 INFO::Fitting model to feature number 69, Feature78
+2024-07-21 13:28:06.117869 INFO::Fitting model to feature number 70, Feature79
+2024-07-21 13:28:06.120814 INFO::Fitting model to feature number 71, Feature80
+2024-07-21 13:28:06.123725 INFO::Fitting model to feature number 72, Feature81
+2024-07-21 13:28:06.126751 INFO::Fitting model to feature number 73, Feature82
+2024-07-21 13:28:06.129957 INFO::Fitting model to feature number 74, Feature83
+2024-07-21 13:28:06.13298 INFO::Fitting model to feature number 75, Feature84
+2024-07-21 13:28:06.136609 INFO::Fitting model to feature number 76, Feature85
+2024-07-21 13:28:06.139757 INFO::Fitting model to feature number 77, Feature86
+2024-07-21 13:28:06.142846 INFO::Fitting model to feature number 78, Feature87
+2024-07-21 13:28:06.147352 INFO::Fitting model to feature number 79, Feature88
+2024-07-21 13:28:06.151546 INFO::Fitting model to feature number 80, Feature89
+2024-07-21 13:28:06.169688 INFO::Fitting model to feature number 81, Feature91
+2024-07-21 13:28:06.177764 INFO::Fitting model to feature number 82, Feature93
+2024-07-21 13:28:06.184211 INFO::Fitting model to feature number 83, Feature94
+2024-07-21 13:28:06.190234 INFO::Fitting model to feature number 84, Feature95
+2024-07-21 13:28:06.203469 INFO::Fitting model to feature number 85, Feature96
+2024-07-21 13:28:06.207921 INFO::Fitting model to feature number 86, Feature97
+2024-07-21 13:28:06.2118 INFO::Fitting model to feature number 87, Feature98
+2024-07-21 13:28:06.2153 INFO::Fitting model to feature number 88, Feature99
+2024-07-21 13:28:06.21899 INFO::Fitting model to feature number 89, Feature100
+2024-07-21 13:28:06.232983 INFO::Counting total values for each feature
+2024-07-21 13:28:06.246543 INFO::Writing residuals to file spike_in_demo/fits/residuals_LM.rds
+2024-07-21 13:28:06.251571 INFO::Writing fitted values to file spike_in_demo/fits/fitted_LM.rds
+2024-07-21 13:28:06.254204 INFO::Writing residuals to file spike_in_demo/fits/residuals_logistic.rds
+2024-07-21 13:28:06.260796 INFO::Writing fitted values to file spike_in_demo/fits/fitted_logistic.rds
+2024-07-21 13:28:06.268183 INFO::Writing all the results to file (ordered by increasing joint q-values): spike_in_demo/all_results.tsv
+2024-07-21 13:28:06.273559 INFO::Writing the significant results without errors (those which are less than or equal to the threshold of 0.100000 ) to file (ordered by increasing joint q-values): spike_in_demo/significant_results.tsv
+2024-07-21 13:28:06.274661 INFO::Creating output figures folder
+2024-07-21 13:28:06.277932 INFO::Writing summary plot of significant results to file: spike_in_demo/figures/summary_plot.pdf
+2024-07-21 13:28:07.196045 INFO::Writing association plots (one for each significant association) to output folder: spike_in_demo/figures
+2024-07-21 13:28:07.196861 INFO::Plotting associations from most to least significant, grouped by metadata
+2024-07-21 13:28:07.199072 INFO::Creating box plot for categorical data (linear), Metadata_2 vs Feature58
+2024-07-21 13:28:07.207898 INFO::Creating box plot for categorical data (linear), Metadata_5 vs Feature88
+2024-07-21 13:28:07.215748 INFO::Creating tile plot for categorical data (logistic), Metadata_1 vs Feature3
+2024-07-21 13:28:07.228826 INFO::Creating box plot for categorical data (linear), Metadata_1 vs Feature10
+2024-07-21 13:28:07.237568 INFO::Creating boxplot for continuous data (logistic), Metadata_4 vs Feature39
+2024-07-21 13:28:07.246885 INFO::Creating tile plot for categorical data (logistic), Metadata_1 vs Feature82
+2024-07-21 13:28:07.259065 INFO::Creating boxplot for continuous data (logistic), Metadata_4 vs Feature45
+2024-07-21 13:28:07.279298 INFO::Creating boxplot for continuous data (logistic), Metadata_4 vs Feature88
+2024-07-21 13:28:07.290262 INFO::Creating tile plot for categorical data (logistic), Metadata_1 vs Feature80
+2024-07-21 13:28:07.301416 INFO::Creating scatter plot for continuous data (linear), Metadata_4 vs Feature97
+2024-07-21 13:28:07.310193 INFO::Creating boxplot for continuous data (logistic), Metadata_3 vs Feature26
+2024-07-21 13:28:07.319066 INFO::Creating scatter plot for continuous data (linear), Metadata_4 vs Feature56
+2024-07-21 13:28:07.327981 INFO::Creating tile plot for categorical data (logistic), Metadata_5 vs Feature69
+2024-07-21 13:28:07.340535 INFO::Creating box plot for categorical data (linear), Metadata_1 vs Feature49
+2024-07-21 13:28:07.34843 INFO::Creating scatter plot for continuous data (linear), Metadata_3 vs Feature83
+2024-07-21 13:28:07.364591 INFO::Creating tile plot for categorical data (logistic), Metadata_1 vs Feature58
+2024-07-21 13:28:07.382356 INFO::Creating boxplot for continuous data (logistic), Metadata_3 vs Feature16
+2024-07-21 13:28:07.392534 INFO::Creating tile plot for categorical data (logistic), Metadata_5 vs Feature87
+2024-07-21 13:28:07.411947 INFO::Creating tile plot for categorical data (logistic), Metadata_1 vs Feature45
+2024-07-21 13:28:07.433029 INFO::Creating boxplot for continuous data (logistic), Metadata_3 vs Feature49
+2024-07-21 13:28:07.445875 INFO::Creating tile plot for categorical data (logistic), Metadata_2 vs Feature51
+2024-07-21 13:28:07.460317 INFO::Creating boxplot for continuous data (logistic), Metadata_4 vs Feature71
+2024-07-21 13:28:07.469979 INFO::Creating tile plot for categorical data (logistic), Metadata_5 vs Feature23
+2024-07-21 13:28:07.504008 INFO::Creating box plot for categorical data (linear), Metadata_5 vs Feature49
+2024-07-21 13:28:07.54779 INFO::Creating boxplot for continuous data (logistic), Metadata_3 vs Feature99
+2024-07-21 13:28:07.5604 INFO::Creating boxplot for continuous data (logistic), Metadata_4 vs Feature56
+2024-07-21 13:28:07.573864 INFO::Creating scatter plot for continuous data (linear), Metadata_3 vs Feature64
+2024-07-21 13:28:07.584085 INFO::Creating scatter plot for continuous data (linear), Metadata_4 vs Feature39
+2024-07-21 13:28:07.594487 INFO::Creating box plot for categorical data (linear), Metadata_1 vs Feature84
+2024-07-21 13:28:07.605136 INFO::Creating box plot for categorical data (linear), Metadata_1 vs Feature67
