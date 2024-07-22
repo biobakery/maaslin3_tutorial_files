@@ -1,0 +1,466 @@
+2024-07-22 08:06:45.131708 INFO::Writing function arguments to log file
+2024-07-22 08:06:45.132718 DEBUG::Function arguments
+2024-07-22 08:06:45.132882 DEBUG::Output folder: demo_output_mtx_mgx
+2024-07-22 08:06:45.133129 DEBUG::Min Abundance: 0.000000
+2024-07-22 08:06:45.133247 DEBUG::Zero Threshold: 0.000000
+2024-07-22 08:06:45.133359 DEBUG::Min Prevalence: 0.000000
+2024-07-22 08:06:45.133469 DEBUG::Normalization: TSS
+2024-07-22 08:06:45.133576 DEBUG::Transform: LOG
+2024-07-22 08:06:45.133682 DEBUG::Max significance: 0.100000
+2024-07-22 08:06:45.133788 DEBUG::Random effects: participant_id
+2024-07-22 08:06:45.133894 DEBUG::Fixed effects: diagnosis,dysbiosis_state,antibiotics,age
+2024-07-22 08:06:45.134003 DEBUG::Group effects:
+2024-07-22 08:06:45.134107 DEBUG::Ordered effects:
+2024-07-22 08:06:45.134211 DEBUG::Formula:
+2024-07-22 08:06:45.134312 DEBUG::Correction method: BH
+2024-07-22 08:06:45.134415 DEBUG::Standardize: TRUE
+2024-07-22 08:06:45.134518 DEBUG::Augment: TRUE
+2024-07-22 08:06:45.134619 DEBUG::Cores: 1
+2024-07-22 08:06:45.134721 DEBUG::Abundance median comparison: TRUE
+2024-07-22 08:06:45.134823 DEBUG::Prevalence median comparison: FALSE
+2024-07-22 08:06:45.134929 DEBUG::Abundance median comparison threshold: 0
+2024-07-22 08:06:45.135035 DEBUG::Prevalence median comparison threshold: 0.25
+2024-07-22 08:06:45.135141 DEBUG::Feature specific covariate name: DNA
+2024-07-22 08:06:45.135379 INFO::Verifying options selected are valid
+2024-07-22 08:06:45.135672 INFO::Determining format of input files
+2024-07-22 08:06:45.135921 INFO::Input format is data samples as rows and metadata samples as rows
+2024-07-22 08:06:45.136169 INFO::Input format is data samples as rows and feature_specific_covariate samples as rows
+2024-07-22 08:06:45.1378 DEBUG::A total of 754 samples were found in both the data and metadata
+2024-07-22 08:06:45.137959 DEBUG::A total of 754 samples were found in the data, metadata, and feature specific covariates
+2024-07-22 08:06:45.138117 INFO::The following samples were found to have features but no metadata (or feature specific covariates if applicable). They will be removed. CSM79HIT,CSM79HJM,CSM79HJO,CSM79HJS,CSM79HR2,CSM79HR6,CSM79HR8,CSM79HRC,CSM79HRG,CSM7KOO5,CSM7KOO9,CSM7KOOD,CSM7KOOF,CSM7KOOV,CSM9X1Z4,CSM9X1ZC,CSM9X237,CSMA9J65,CSMAIG7X,HSM67VEK,HSM6XRT8,HSMA33IC,HSMA33IE,HSMA33LH_TR,HSMA33LH,HSMA33P6,HSMA33RT,HSMA33RX_TR,HSMA33RX,MSM6J2IE,MSM79H5G,MSM79H5K,MSM79H9A,MSM79H9G,MSM79H9M,MSM79H9Q,MSM79H9W,MSM9VZGO,MSM9VZHB,MSM9VZHF,MSM9VZLJ,MSMAPC64,PSM6XBUI,PSM7J14X,PSM7J4EF,MSM5LLIC_P,ESM5GEYY_P,ESM5GEYW_P,CSM5MCV1_P
+2024-07-22 08:06:45.138489 INFO::The following samples were found to have metadata but no features (or feature specific covariates if applicable). They will be removed. CSM5FZ3N_P,CSM5FZ3R_P,CSM5FZ3V_P,CSM5FZ3X_P,CSM5FZ3Z_P,CSM5FZ42_P,CSM5FZ44_P,CSM5FZ4A_P,CSM5FZ4E_P,CSM5MCUA_P,CSM5MCUS_P,CSM5MCVD_P,CSM5MCVF_P,CSM5MCVJ_P,CSM5MCVL,CSM5MCVZ_P,CSM5MCW4_P,CSM5MCWA_P,CSM5MCWG,CSM5MCWK_P,CSM5MCXB_P,CSM5MCXF_P,CSM5MCXV,CSM5MCXX_P,CSM5MCXZ_P,CSM5MCYI_P,CSM5MCYM_P,CSM5MCYO_P,CSM5MCYQ_P,CSM5MCYS,CSM5MCYU_P,CSM5MCYW,CSM5MCZ5,CSM5MCZ7,CSM5YRY7_P,CSM67U9B,CSM67U9H_P,CSM67U9J,CSM67U9N,CSM67U9P_P,CSM67U9R_P,CSM67U9T_P,CSM67U9V_P,CSM67U9X_P,CSM67UAG,CSM67UAI_P,CSM67UAQ,CSM67UAS,CSM67UB1,CSM67UB5_P,CSM67UB7_P,CSM67UB9_P,CSM67UBB,CSM67UBF,CSM67UBR,CSM67UBX,CSM67UCU_P,CSM67UE3,CSM67UEM,CSM67UEP_P,CSM67UET_P,CSM67UEW_P,CSM67UEW,CSM67UF1_P,CSM67UF1,CSM67UF5,CSM67UFV,CSM67UG8,CSM67UGC,CSM67UH7,CSM79HG5,CSM79HG7_P,CSM79HGD_P,CSM79HGF_P,CSM79HGH_P,CSM79HGJ_P,CSM79HGL_P,CSM79HGN_P,CSM79HGR_P,CSM79HGV_P,CSM79HH2_P,CSM79HHA,CSM79HIH,CSM79HJ2_P,CSM79HJ4_P,CSM79HJ6_P,CSM79HJ8_P,CSM79HJC_P,CSM79HJI_P,CSM79HJY,CSM79HK9,CSM79HKV,CSM79HKX,CSM79HKZ,CSM79HL4,CSM79HL6,CSM79HLI,CSM79HLK,CSM79HLM,CSM79HM1,CSM79HM5_P,CSM79HM7,CSM79HM9_P,CSM79HMN,CSM79HMP,CSM79HN2,CSM79HNE,CSM79HNG_P,CSM79HNI,CSM79HNK,CSM79HNM,CSM79HNW,CSM79HOF,CSM79HOH,CSM79HOJ,CSM79HOT,CSM79HOV,CSM79HOX,CSM79HP2,CSM79HP6,CSM79HPA_TR,CSM79HPM_P,CSM79HPO,CSM79HPQ_P,CSM79HPU,CSM79HQ9,CSM79HQB,CSM79HQR_P,CSM79HQT_P,CSM7CZ2F_P,CSM7KOJE,CSM7KOJQ,CSM7KOJS,CSM7KOK1,CSM7KOK3,CSM7KOK7,CSM7KOKF,CSM7KOKH_P,CSM7KOKL_P,CSM7KOKP_P,CSM7KOKT,CSM7KOL2,CSM7KOLK,CSM7KOLY,CSM7KOMH,CSM7KOMP,CSM7KOMR_P,CSM7KOMV_P,CSM7KOMX,CSM7KOMZ,CSM7KON8,CSM7KONA,CSM7KONS_P,CSM7KONU,CSM7KONW_P,CSM7KOOJ,CSM7KOOL,CSM7KOON,CSM7KOOP,CSM7KOP6,CSM7KOP8,CSM7KOPE,CSM7KOPG,CSM7KOQ1,CSM7KOQ5_P,CSM7KOQP_P,CSM7KOQX,CSM7KOQZ_P,CSM7KOR4_P,CSM7KOR8_P,CSM7KORI,CSM7KORS,CSM7KOS7,CSM7KOSH,CSM7KOSJ,CSM7KOST,CSM7KOTA,CSM7KOTO,CSM7KOU7_P,CSM7KOUB,CSM7KOUJ_P,CSM9X1Y5,CSM9X1ZO,CSM9X1ZQ,CSM9X1ZY,CSM9X211,CSM9X215,CSM9X21L,CSM9X21N,CSM9X21R,CSM9X222,CSM9X22G,CSM9X22I,CSM9X233,CSM9X23H,CSMA8M9R,CSMAAEUA,CSMAE44D,CSMAHYLR,ESM5GEYX_P,ESM5GEZ1_P,ESM5GEZ4_P,ESM5GEZ6_P,ESM5GEZA_P,ESM5MEA9_P,ESM5MEAB_P,ESM5MEB9_P,ESM5MEBE,ESM5MEBI,ESM5MEC3,ESM5MEC7_P,ESM5MEC9,ESM5MECQ,ESM5MEDD,ESM5MEDK,ESM5MEDP_P,ESM5MEDU,ESM718SY,ESM718T9,ESM718TM,ESM718UH,ESM718V4,ESM7F5AE_P,ESM7F5AM,ESM7F5C7,ESM7F5CD,ESM7F5CF,ESM9IEP1,HSM5FZBR_P,HSM5MD3L_P,HSM5MD3Y,HSM5MD43_P,HSM5MD44_P,HSM5MD47_P,HSM5MD49_P,HSM5MD4O,HSM5MD4P_P,HSM5MD4W_P,HSM5MD4Y,HSM5MD5B_P,HSM5MD5D_P,HSM5MD5F_P,HSM5MD5H_P,HSM5MD5X_P,HSM5MD5Z_P,HSM5MD6C,HSM5MD6E_P,HSM5MD6I_P,HSM5MD6K_P,HSM5MD6M,HSM5MD6O_P,HSM5MD6Q,HSM5MD6S_P,HSM5MD6U_P,HSM5MD75,HSM5MD79,HSM5MD7J,HSM5MD7M,HSM5MD7O,HSM5MD7W_P,HSM5MD7Z_P,HSM5MD8B_P,HSM5MD8D_P,HSM5MD8F_P,HSM5MD8H_P,HSM5MD8J_P,HSM5MD8L_P,HSM5MEE5_P,HSM67VCX_P,HSM67VDP,HSM67VDR_P,HSM67VDT_P,HSM67VDT,HSM67VDX_P,HSM67VDZ,HSM67VE4,HSM67VEG,HSM67VEQ,HSM67VEW,HSM67VFF,HSM67VFH,HSM67VFX_P,HSM67VFX,HSM67VG2_P,HSM67VG6_P,HSM67VGA_P,HSM67VGI_P,HSM67VGK_TR,HSM67VHH,HSM67VHK,HSM67VHQ,HSM67VHS,HSM67VI1,HSM67VI5,HSM67VI7,HSM67VID,HSM67VIF,HSM67VIJ_P,HSM6XRQB_P,HSM6XRQC_P,HSM6XRQS,HSM6XRQY,HSM6XRR3,HSM6XRRD,HSM6XRS2,HSM6XRS6,HSM6XRS8,HSM6XRSE,HSM6XRSX_P,HSM6XRSZ_P,HSM6XRT2_P,HSM6XRT4_P,HSM6XRT6_P,HSM6XRTA_P,HSM6XRTC_P,HSM6XRTE_P,HSM6XRTG_P,HSM6XRTG,HSM6XRTO,HSM6XRTS,HSM6XRUV,HSM6XRUX,HSM6XRUZ,HSM6XRV2,HSM6XRVA,HSM6XRVU,HSM7CYWS_P,HSM7CYXA,HSM7CYXE,HSM7CYXG,HSM7CYXO,HSM7CYXQ,HSM7CYXS,HSM7CYY3,HSM7CYY5,HSM7CYYF,HSM7CYYP,HSM7CYYR_P,HSM7CYYV_P,HSM7CYZ5,HSM7CYZ9,HSM7CYZB,HSM7CYZD,HSM7CYZF,HSM7CYZL,HSM7CYZR,HSM7CZ16,HSM7CZ18,HSM7CZ1C,HSM7CZ1E,HSM7CZ1G,HSM7CZ1T_P,HSM7CZ24,HSM7CZ26,HSM7CZ28,HSM7CZ2A,HSM7CZ2E,HSM7CZ2J_P,HSM7CZ2L_P,HSM7CZ2X_P,HSM7CZ2Z,HSM7CZ3G,HSM7J4G8,HSM7J4GP,HSM7J4HA,HSM7J4HE,HSM7J4HG,HSM7J4HI,HSM7J4HK,HSM7J4HW,HSM7J4HY,HSM7J4I7,HSM7J4I9,HSM7J4IU,HSM7J4IW,HSM7J4J9,HSM7J4JF,HSM7J4JN,HSM7J4JP,HSM7J4JT_P,HSM7J4JV_P,HSM7J4K4,HSM7J4KA,HSM7J4KI,HSM7J4KM,HSM7J4KO,HSM7J4LF,HSM7J4LP,HSM7J4M4,HSM7J4M6,HSM7J4MW,HSM7J4NA,HSM7J4NC,HSM7J4NM,HSM7J4O1,HSM7J4O5,HSM7J4O7,HSM7J4OB,HSM7J4OL,HSM7J4ON,HSM7J4OV,HSM7J4OX,HSM7J4P2,HSM7J4PA,HSM7J4PC,HSM7J4PE,HSM7J4PG,HSM7J4PK,HSM7J4PU,HSM7J4Q1,HSM7J4Q3_P,HSM7J4Q7,HSM7J4Q9,HSM7J4QB,HSM7J4QD,HSM7J4QH,HSM7J4QL,HSM7J4QZ,HSM7J4RE,HSMA33IS,HSMA33J1_P,HSMA33J7,HSMA33J9,HSMA33JN,HSMA33JP,HSMA33JZ,HSMA33KM,HSMA33KO,HSMA33KQ,HSMA33KS,HSMA33LP,HSMA33LX,HSMA33LZ,HSMA33MC,HSMA33MI,HSMA33MK,HSMA33MV,HSMA33MX,HSMA33N4,HSMA33NC,HSMA33NG_P,HSMA33NW,HSMA33NY,HSMA33O1,HSMA33OL,HSMA33OP,HSMA33OX,HSMA33P2_P,HSMA33PN,HSMA33PX,HSMA33QM,HSMA33R1,HSMA33R7,HSMA33R9,HSMA33S4,HSMA33SE,MSM5LLD6_P,MSM5LLDE,MSM5LLDI,MSM5LLDU,MSM5LLE3_P,MSM5LLE9_P,MSM5LLER,MSM5LLF2_P,MSM5LLF6,MSM5LLF8,MSM5LLGF_P,MSM5LLGJ_P,MSM5LLGL,MSM5LLGN_P,MSM5LLGR_P,MSM5LLHE_P,MSM5LLI2_P,MSM5LLI4_P,MSM5LLI8_P,MSM5LLIM_P,MSM633FF_P,MSM6J2HD,MSM6J2HF,MSM6J2HH,MSM6J2HJ,MSM6J2HL,MSM6J2HN,MSM6J2IG,MSM6J2II,MSM6J2IK,MSM6J2IM,MSM6J2IY,MSM6J2J1,MSM6J2JB,MSM6J2JF_P,MSM6J2JH_P,MSM6J2JT,MSM6J2K4,MSM6J2K8,MSM6J2KA,MSM6J2LH,MSM6J2LN,MSM6J2LR,MSM6J2LT,MSM6J2LW,MSM6J2LY,MSM6J2M3_P,MSM6J2MD,MSM6J2MF,MSM6J2ML,MSM6J2OH,MSM6J2OJ,MSM6J2OL,MSM6J2ON,MSM6J2OP,MSM6J2PM,MSM6J2PO,MSM6J2PQ_P,MSM6J2PW,MSM6J2Q7,MSM6J2Q9,MSM6J2QB,MSM6J2QL,MSM6J2RA,MSM6J2RK,MSM6J2RM,MSM6J2RQ,MSM6J2RU,MSM6J2SI,MSM79H52_P,MSM79H58,MSM79H5A,MSM79H5S,MSM79H5U,MSM79H63,MSM79H65,MSM79H67,MSM79H69,MSM79H6B,MSM79H6D,MSM79H6H,MSM79H6J,MSM79H6L,MSM79H6N,MSM79H6Y,MSM79H7W,MSM79H85,MSM79H89,MSM79H8B,MSM79H8F,MSM79H8H,MSM79H8J_P,MSM79H8N,MSM79H94_P,MSM79H98,MSM79H9C,MSM79HA1,MSM79HA7,MSM79HAN,MSM79HAR,MSM79HAT,MSM79HBL,MSM79HBN,MSM79HBP,MSM79HBR,MSM79HBT,MSM79HBV,MSM79HBX_P,MSM79HBZ,MSM79HCG,MSM79HCN_P,MSM79HD6_P,MSM79HD8_P,MSM79HDK,MSM79HDO,MSM79HDS,MSM79HDU,MSM79HEA,MSM79HES,MSM79HEW,MSM79HF1_P,MSM79HF3,MSM79HFW,MSM7J16L,MSM7J16N,MSM7J16P,MSM7J16R,MSM9VZEM,MSM9VZEO,MSM9VZF7,MSM9VZFH,MSM9VZFJ_P,MSM9VZFN,MSM9VZFT,MSM9VZGW,MSM9VZH7,MSM9VZHL,MSM9VZHP,MSM9VZHR,MSM9VZHZ,MSM9VZIO,MSM9VZIS,MSM9VZIW,MSM9VZJF_P,MSM9VZJJ_P,MSM9VZL7,MSM9VZLD,MSM9VZLF,MSM9VZLH,MSM9VZLL,MSM9VZLR,MSM9VZLZ,MSM9VZM4_P,MSM9VZMC,MSM9VZME,MSM9VZMS,MSM9VZMW,MSM9VZN4_P,MSM9VZNR,MSM9VZNZ,MSM9VZO2,MSM9VZOI,MSM9VZOM,MSM9VZOO,MSM9VZOW,MSM9VZPN,MSM9VZPT,MSMA267X,MSMA2684,MSMA2688,MSMA26AL,MSMA26AN,MSMA26AP,MSMA26AR,MSMA26AT,MSMA26BD,MSMA26BF,MSMA26BH,MSMA26BJ,MSMA26BL,MSMA26BN,MSMA26BT,MSMA26BV,MSMA26CV,MSMA26CX,MSMA26DG,MSMA26DK,MSMA26EH,MSMA26EN,MSMA26EP,MSMA26ER,MSMA26EZ,MSMAPC55,MSMAPC57,MSMAPC5B,MSMAPC5H,MSMAPC66,MSMAPC6C,MSMAPC6E,MSMAPC6M,MSMAPC6O,MSMAPC7P,MSMB4LXS,MSMB4LZP,MSMB4LZV,MSMB4LZZ,PSM6XBQM_P,PSM6XBQS,PSM6XBR1,PSM6XBRK_P,PSM6XBRM_P,PSM6XBS2_P,PSM6XBS4_P,PSM6XBS8,PSM6XBSA,PSM6XBSC_P,PSM6XBSE_P,PSM6XBSG_P,PSM6XBSK,PSM6XBSS,PSM6XBT1,PSM6XBT5,PSM6XBT7,PSM6XBTB,PSM6XBTF_P,PSM6XBTH_P,PSM6XBTL,PSM6XBTN_P,PSM6XBTR,PSM6XBTT,PSM6XBTX,PSM6XBTZ_P,PSM6XBU2,PSM6XBUM,PSM6XBUO,PSM6XBVM,PSM6XBVO,PSM6XBVQ,PSM6XBVS,PSM6XBVY_P,PSM6XBW1_P,PSM6XBW3,PSM7J127,PSM7J12B,PSM7J12F,PSM7J12V,PSM7J12Z,PSM7J13I,PSM7J13K,PSM7J13Q,PSM7J13U_P,PSM7J13Y_P,PSM7J13Y,PSM7J143_P,PSM7J156,PSM7J158,PSM7J15G,PSM7J15I,PSM7J15K,PSM7J15M,PSM7J163,PSM7J169,PSM7J16B,PSM7J16F,PSM7J16H,PSM7J16W,PSM7J173,PSM7J179,PSM7J17D,PSM7J17F,PSM7J17T,PSM7J19H,PSM7J19R,PSM7J19T,PSM7J19X_P,PSM7J19Z,PSM7J1A4,PSM7J1A6,PSM7J1AO,PSM7J1AQ,PSM7J1AS,PSM7J1B3_P,PSM7J1B7,PSM7J1B9,PSM7J1BD,PSM7J1BJ,PSM7J1BN_P,PSM7J1BP,PSM7J1BV,PSM7J1BX,PSM7J1C2_P,PSM7J1C4,PSM7J1C8,PSM7J1CG,PSM7J1CK_P,PSM7J1CS_P,PSM7J1DF,PSM7J1DL,PSMA263M,PSMA263S,PSMA263U,PSMA264K,PSMA264O,PSMA264Q,PSMA264W,PSMA2651_P,PSMA2653,PSMA2659,PSMA265D,PSMA266O,PSMA2671,PSMA267D,PSMA267F,PSMA26A1,PSMB4MBI,PSMB4MC1,PSMB4MC3
+2024-07-22 08:06:45.140266 INFO::The following samples were found to have feature specific covariates but no features or no metadata. They will be removed. CSM79HIT,CSM79HJM,CSM79HJO,CSM79HJS,CSM79HR2,CSM79HR6,CSM79HR8,CSM79HRC,CSM79HRG,CSM7KOO5,CSM7KOO9,CSM7KOOD,CSM7KOOF,CSM7KOOV,CSM9X1Z4,CSM9X1ZC,CSM9X237,CSMA9J65,CSMAIG7X,HSM67VEK,HSM6XRT8,HSMA33IC,HSMA33IE,HSMA33LH_TR,HSMA33LH,HSMA33P6,HSMA33RT,HSMA33RX_TR,HSMA33RX,MSM6J2IE,MSM79H5G,MSM79H5K,MSM79H9A,MSM79H9G,MSM79H9M,MSM79H9Q,MSM79H9W,MSM9VZGO,MSM9VZHB,MSM9VZHF,MSM9VZLJ,MSMAPC64,PSM6XBUI,PSM7J14X,PSM7J4EF,MSM5LLIC_P,ESM5GEYY_P,ESM5GEYW_P,CSM5MCV1_P
+2024-07-22 08:06:45.140455 DEBUG::Reordering data/metadata to use same sample ordering
+2024-07-22 08:06:45.142476 INFO::Formula for random effects: expr ~ (1 | participant_id)
+2024-07-22 08:06:45.142773 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosis_state + antibiotics + age + DNA
+2024-07-22 08:06:45.143165 INFO::Factor detected for categorial metadata 'diagnosis'. Provide a reference argument or manually set factor ordering to change reference level.
+2024-07-22 08:06:45.143389 INFO::Factor detected for categorial metadata 'dysbiosis_state'. Provide a reference argument or manually set factor ordering to change reference level.
+2024-07-22 08:06:45.143597 INFO::Factor detected for categorial metadata 'antibiotics'. Provide a reference argument or manually set factor ordering to change reference level.
+2024-07-22 08:06:45.143797 INFO::Filter data based on min abundance and min prevalence
+2024-07-22 08:06:45.143993 INFO::Total samples in data: 754
+2024-07-22 08:06:45.144182 INFO::Min samples required with min abundance for a feature not to be filtered: 0.000000
+2024-07-22 08:06:45.163271 INFO::Total filtered features: 0
+2024-07-22 08:06:45.163592 INFO::Filtered feature names from abundance and prevalence filtering:
+2024-07-22 08:06:45.16629 INFO::Total filtered features with variance filtering: 0
+2024-07-22 08:06:45.166535 INFO::Filtered feature names from variance filtering:
+2024-07-22 08:06:45.166737 INFO::Creating output feature tables folder
+2024-07-22 08:06:45.166983 INFO::Writing filtered data to file demo_output_mtx_mgx/features/filtered_data.tsv
+2024-07-22 08:06:45.228033 INFO::Applying z-score to standardize continuous metadata
+2024-07-22 08:06:45.22995 INFO::Running selected normalization method: TSS
+2024-07-22 08:06:45.239105 INFO::Writing filtered, normalized data to file demo_output_mtx_mgx/features/filtered_data_norm.tsv
+2024-07-22 08:06:45.29675 INFO::Running selected transform method: LOG
+2024-07-22 08:06:45.306334 INFO::Writing filtered, normalized, transformed data to file demo_output_mtx_mgx/features/filtered_data_norm_transformed.tsv
+2024-07-22 08:06:45.364597 INFO::Running the linear model (LM) component
+2024-07-22 08:06:45.369725 INFO::Fitting model to feature number 1, X1CMET2_PWY_N10_formyl_tetrahydrofolate_biosyn
+2024-07-22 08:06:45.393891 INFO::Fitting model to feature number 2, ANAEROFRUCAT_PWY_homolactic_fermentation
+2024-07-22 08:06:45.559451 INFO::Fitting model to feature number 3, ANAGLYCOLYSIS_PWY_glycolysis_III
+2024-07-22 08:06:45.581859 INFO::Fitting model to feature number 4, ARGININE_SYN4_PWY_L_ornithine_de_novo_biosyn
+2024-07-22 08:06:45.603766 INFO::Fitting model to feature number 5, ARGSYN_PWY_L_arginine_biosyn_I
+2024-07-22 08:06:45.624552 INFO::Fitting model to feature number 6, ARGSYNBSUB_PWY_L_arginine_biosyn_II
+2024-07-22 08:06:45.646403 INFO::Fitting model to feature number 7, ARO_PWY_chorismate_biosyn_I
+2024-07-22 08:06:45.676727 INFO::Fitting model to feature number 8, ASPASN_PWY_SP_of_L_aspartate__L_asparagine_biosyn
+2024-07-22 08:06:45.699782 INFO::Fitting model to feature number 9, BRANCHED_CHAIN_AA_SYN_PWY_SP_of_branched_amino_acid_biosyn
+2024-07-22 08:06:45.722196 INFO::Fitting model to feature number 10, CALVIN_PWY_Calvin_Benson_Bassham_cyc
+2024-07-22 08:06:45.745456 INFO::Fitting model to feature number 11, CITRULBIO_PWY_L_citrulline_biosyn
+2024-07-22 08:06:45.767682 INFO::Fitting model to feature number 12, COA_PWY_1_coenzyme_A_biosyn_II
+2024-07-22 08:06:45.79055 INFO::Fitting model to feature number 13, COA_PWY_coenzyme_A_biosyn_I
+2024-07-22 08:06:45.817103 INFO::Fitting model to feature number 14, COBALSYN_PWY_adenosylcobalamin_salvage_from_cobinamide_I
+2024-07-22 08:06:45.838357 INFO::Fitting model to feature number 15, COMPLETE_ARO_PWY_SP_of_aromatic_amino_acid_biosyn
+2024-07-22 08:06:45.861088 INFO::Fitting model to feature number 16, DAPLYSINESYN_PWY_L_lysine_biosyn_I
+2024-07-22 08:06:45.882554 INFO::Fitting model to feature number 17, DENOVOPURINE2_PWY_SP_of_purine_nt_de_novo_biosyn_II
+2024-07-22 08:06:45.904393 INFO::Fitting model to feature number 18, DTDPRHAMSYN_PWY_dTDP_L_rhamnose_biosyn_I
+2024-07-22 08:06:45.931843 INFO::Fitting model to feature number 19, FASYN_ELONG_PWY_fatty_acid_elongation__saturated
+2024-07-22 08:06:45.952786 INFO::Fitting model to feature number 20, FASYN_INITIAL_PWY_SP_of_fatty_acid_biosyn_initiation
+2024-07-22 08:06:45.974068 INFO::Fitting model to feature number 21, FUCCAT_PWY_fucose_deg
+2024-07-22 08:06:45.993885 INFO::Fitting model to feature number 22, GALACT_GLUCUROCAT_PWY_SP_of_hexuronide__hexuronate_deg
+2024-07-22 08:06:46.015923 INFO::Fitting model to feature number 23, GALACTUROCAT_PWY_D_galacturonate_deg_I
+2024-07-22 08:06:46.042239 INFO::Fitting model to feature number 24, GLCMANNANAUT_PWY_SP_of_N_acetylglucosamine_N_acetylmannosamine__N_acetylneuraminate_deg
+2024-07-22 08:06:46.065262 INFO::Fitting model to feature number 25, GLUCONEO_PWY_gluconeogenesis_I
+2024-07-22 08:06:46.088102 INFO::Fitting model to feature number 26, GLUCOSE1PMETAB_PWY_glucose__glucose_1_phosphate_deg
+2024-07-22 08:06:46.111884 INFO::Fitting model to feature number 27, GLUCUROCAT_PWY_SP_of_beta_D_glucuronide__D_glucuronate_deg
+2024-07-22 08:06:46.135467 INFO::Fitting model to feature number 28, GLYCOGENSYNTH_PWY_glycogen_biosyn_I
+2024-07-22 08:06:46.158399 INFO::Fitting model to feature number 29, GLYCOLYSIS_E_D_SP_of_glycolysis__Entner_Doudoroff
+2024-07-22 08:06:46.18564 INFO::Fitting model to feature number 30, GLYCOLYSIS_glycolysis_I
+2024-07-22 08:06:46.209184 INFO::Fitting model to feature number 31, GLYOXYLATE_BYPASS_glyoxylate_cyc
+2024-07-22 08:06:46.228918 INFO::Fitting model to feature number 32, HISDEG_PWY_L_histidine_deg_I
+2024-07-22 08:06:46.250579 INFO::Fitting model to feature number 33, HISTSYN_PWY_L_histidine_biosyn
+2024-07-22 08:06:46.273243 INFO::Fitting model to feature number 34, ILEUSYN_PWY_L_isoleucine_biosyn_I
+2024-07-22 08:06:46.300993 INFO::Fitting model to feature number 35, MET_SAM_PWY_SP_of_S_adenosyl_L_methionine_biosyn
+2024-07-22 08:06:46.321458 INFO::Fitting model to feature number 36, METSYN_PWY_L_homoserine__L_methionine_biosyn
+2024-07-22 08:06:46.341642 INFO::Fitting model to feature number 37, NAGLIPASYN_PWY_lipid_IVA_biosyn
+2024-07-22 08:06:46.363354 INFO::Fitting model to feature number 38, NONMEVIPP_PWY_methylerythritol_phosphate_pwy_I
+2024-07-22 08:06:46.386105 INFO::Fitting model to feature number 39, NONOXIPENT_PWY_pentose_phosphate_pwy
+2024-07-22 08:06:46.408832 INFO::Fitting model to feature number 40, OANTIGEN_PWY_O_antigen_building_blocks_biosyn
+2024-07-22 08:06:46.433864 INFO::Fitting model to feature number 41, P105_PWY_TCA_cyc_IV
+2024-07-22 08:06:46.452032 INFO::Fitting model to feature number 42, P108_PWY_pyruvate_fermentation_to_propanoate_I
+2024-07-22 08:06:46.471761 INFO::Fitting model to feature number 43, P161_PWY_acetylene_deg
+2024-07-22 08:06:46.492674 INFO::Fitting model to feature number 44, P42_PWY_incomplete_reductive_TCA_cyc
+2024-07-22 08:06:46.514179 INFO::Fitting model to feature number 45, P441_PWY_SP_of_N_acetylneuraminate_deg
+2024-07-22 08:06:46.538642 INFO::Fitting model to feature number 46, P461_PWY_hexitol_fermentation_to_lactate_formate_ethanol__acetate
+2024-07-22 08:06:46.557997 INFO::Fitting model to feature number 47, PANTO_PWY_phosphopantothenate_biosyn_I
+2024-07-22 08:06:46.580609 INFO::Fitting model to feature number 48, PANTOSYN_PWY_pantothenate__coenzyme_A_biosyn_I
+2024-07-22 08:06:46.602841 INFO::Fitting model to feature number 49, PENTOSE_P_PWY_pentose_phosphate_pwy
+2024-07-22 08:06:46.623932 INFO::Fitting model to feature number 50, PEPTIDOGLYCANSYN_PWY_peptidoglycan_biosyn_I
+2024-07-22 08:06:46.651046 INFO::Fitting model to feature number 51, PHOSLIPSYN_PWY_SP_of_phospholipid_biosyn_I
+2024-07-22 08:06:46.672051 INFO::Fitting model to feature number 52, PRPP_PWY_SP_of_histidine_purine__pyrimidine_biosyn
+2024-07-22 08:06:46.691462 INFO::Fitting model to feature number 53, PWY_1042_glycolysis_IV
+2024-07-22 08:06:46.71377 INFO::Fitting model to feature number 54, PWY_1269_CMP_3_deoxy_D_manno_octulosonate_biosyn_I
+2024-07-22 08:06:46.735681 INFO::Fitting model to feature number 55, PWY_2941_L_lysine_biosyn_II
+2024-07-22 08:06:46.75622 INFO::Fitting model to feature number 56, PWY_2942_L_lysine_biosyn_III
+2024-07-22 08:06:46.782815 INFO::Fitting model to feature number 57, PWY_3001_SP_of_L_isoleucine_biosyn_I
+2024-07-22 08:06:46.805222 INFO::Fitting model to feature number 58, PWY_3841_folate_transformations_II
+2024-07-22 08:06:46.827604 INFO::Fitting model to feature number 59, PWY_4041_beta_glutamyl_cyc
+2024-07-22 08:06:46.847026 INFO::Fitting model to feature number 60, PWY_4242_pantothenate__coenzyme_A_biosyn_III
+2024-07-22 08:06:46.869113 INFO::Fitting model to feature number 61, PWY_4981_L_proline_biosyn_II
+2024-07-22 08:06:46.895427 INFO::Fitting model to feature number 62, PWY_4984_urea_cyc
+2024-07-22 08:06:46.9171 INFO::Fitting model to feature number 63, PWY_5030_L_histidine_deg_III
+2024-07-22 08:06:46.938149 INFO::Fitting model to feature number 64, PWY_5083_NAD_NADH_phosphorylation__dephosphorylation
+2024-07-22 08:06:46.958525 INFO::Fitting model to feature number 65, PWY_5097_L_lysine_biosyn_VI
+2024-07-22 08:06:46.980787 INFO::Fitting model to feature number 66, PWY_5100_pyruvate_fermentation_to_acetate__lactate_II
+2024-07-22 08:06:47.006911 INFO::Fitting model to feature number 67, PWY_5101_L_isoleucine_biosyn_II
+2024-07-22 08:06:47.028214 INFO::Fitting model to feature number 68, PWY_5103_L_isoleucine_biosyn_III
+2024-07-22 08:06:47.050511 INFO::Fitting model to feature number 69, PWY_5104_L_isoleucine_biosyn_IV
+2024-07-22 08:06:47.072156 INFO::Fitting model to feature number 70, PWY_5154_L_arginine_biosyn_III
+2024-07-22 08:06:47.094519 INFO::Fitting model to feature number 71, PWY_5173_SP_of_acetyl_CoA_biosyn
+2024-07-22 08:06:47.115334 INFO::Fitting model to feature number 72, PWY_5177_glutaryl_CoA_deg
+2024-07-22 08:06:47.143864 INFO::Fitting model to feature number 73, PWY_5188_tetrapyrrole_biosyn_I
+2024-07-22 08:06:47.16644 INFO::Fitting model to feature number 74, PWY_5347_SP_of_L_methionine_biosyn
+2024-07-22 08:06:47.186726 INFO::Fitting model to feature number 75, PWY_5484_glycolysis_II
+2024-07-22 08:06:47.209016 INFO::Fitting model to feature number 76, PWY_5659_GDP_mannose_biosyn
+2024-07-22 08:06:47.231522 INFO::Fitting model to feature number 77, PWY_5667_CDP_diacylglycerol_biosyn_I
+2024-07-22 08:06:47.258841 INFO::Fitting model to feature number 78, PWY_5676_acetyl_CoA_fermentation_to_butanoate_II
+2024-07-22 08:06:47.279372 INFO::Fitting model to feature number 79, PWY_5686_UMP_biosyn
+2024-07-22 08:06:47.301939 INFO::Fitting model to feature number 80, PWY_5690_TCA_cyc_II
+2024-07-22 08:06:47.321973 INFO::Fitting model to feature number 81, PWY_5695_urate_biosyn_inosine_5_phosphate_deg
+2024-07-22 08:06:47.344158 INFO::Fitting model to feature number 82, PWY_5723_Rubisco_shunt
+2024-07-22 08:06:47.367999 INFO::Fitting model to feature number 83, PWY_5913_TCA_cyc_VI
+2024-07-22 08:06:47.386701 INFO::Fitting model to feature number 84, PWY_5971_palmitate_biosyn_II
+2024-07-22 08:06:47.405326 INFO::Fitting model to feature number 85, PWY_5973_cis_vaccenate_biosyn
+2024-07-22 08:06:47.429635 INFO::Fitting model to feature number 86, PWY_5989_stearate_biosyn_II
+2024-07-22 08:06:47.451762 INFO::Fitting model to feature number 87, PWY_6121_5_aminoimidazole_rnt_biosyn_I
+2024-07-22 08:06:47.480388 INFO::Fitting model to feature number 88, PWY_6122_5_aminoimidazole_rnt_biosyn_II
+2024-07-22 08:06:47.503058 INFO::Fitting model to feature number 89, PWY_6123_inosine_5_phosphate_biosyn_I
+2024-07-22 08:06:47.525303 INFO::Fitting model to feature number 90, PWY_6124_inosine_5_phosphate_biosyn_II
+2024-07-22 08:06:47.547779 INFO::Fitting model to feature number 91, PWY_6125_SP_of_guanosine_nt_de_novo_biosyn_II
+2024-07-22 08:06:47.569968 INFO::Fitting model to feature number 92, PWY_6126_SP_of_adenosine_nt_de_novo_biosyn_II
+2024-07-22 08:06:47.592344 INFO::Fitting model to feature number 93, PWY_6147_6_hydroxymethyl_dihydropterin_diphosphate_biosyn_I
+2024-07-22 08:06:47.618253 INFO::Fitting model to feature number 94, PWY_6151_S_adenosyl_L_methionine_cyc_I
+2024-07-22 08:06:47.64116 INFO::Fitting model to feature number 95, PWY_6163_chorismate_biosyn_from_3_dehydroquinate
+2024-07-22 08:06:47.664084 INFO::Fitting model to feature number 96, PWY_6168_flavin_biosyn_III
+2024-07-22 08:06:47.686341 INFO::Fitting model to feature number 97, PWY_621_sucrose_deg_III
+2024-07-22 08:06:47.708621 INFO::Fitting model to feature number 98, PWY_6270_isoprene_biosyn_I
+2024-07-22 08:06:47.732015 INFO::Fitting model to feature number 99, PWY_6277_SP_of_5_aminoimidazole_rnt_biosyn
+2024-07-22 08:06:47.754167 INFO::Fitting model to feature number 100, PWY_6282_palmitoleate_biosyn_I
+2024-07-22 08:06:47.775338 INFO::Fitting model to feature number 101, PWY_6317_galactose_deg_I
+2024-07-22 08:06:47.797687 INFO::Fitting model to feature number 102, PWY_6353_purine_nt_deg_II
+2024-07-22 08:06:47.818074 INFO::Fitting model to feature number 103, PWY_6385_peptidoglycan_biosyn_III
+2024-07-22 08:06:47.845146 INFO::Fitting model to feature number 104, PWY_6386_UDP_N_acetylmuramoyl_pentapeptide_biosyn_II
+2024-07-22 08:06:47.867613 INFO::Fitting model to feature number 105, PWY_6387_UDP_N_acetylmuramoyl_pentapeptide_biosyn_I
+2024-07-22 08:06:47.890079 INFO::Fitting model to feature number 106, PWY_6507_4_deoxy_L_threo_hex_4_enopyranuronate_deg
+2024-07-22 08:06:47.912771 INFO::Fitting model to feature number 107, PWY_6527_stachyose_deg
+2024-07-22 08:06:47.934988 INFO::Fitting model to feature number 108, PWY_6545_pyrimidine_dnt_de_novo_biosyn_III
+2024-07-22 08:06:47.960882 INFO::Fitting model to feature number 109, PWY_6608_guanosine_nt_deg_III
+2024-07-22 08:06:47.982643 INFO::Fitting model to feature number 110, PWY_6609_adenine__adenosine_salvage_III
+2024-07-22 08:06:48.004794 INFO::Fitting model to feature number 111, PWY_6700_queuosine_biosyn
+2024-07-22 08:06:48.027187 INFO::Fitting model to feature number 112, PWY_6703_preQ0_biosyn
+2024-07-22 08:06:48.050016 INFO::Fitting model to feature number 113, PWY_6737_starch_deg_V
+2024-07-22 08:06:48.086094 INFO::Fitting model to feature number 114, PWY_6897_thiamin_salvage_II
+2024-07-22 08:06:48.107651 INFO::Fitting model to feature number 115, PWY_6901_SP_of_glucose__xylose_deg
+2024-07-22 08:06:48.127845 INFO::Fitting model to feature number 116, PWY_6936_seleno_amino_acid_biosyn
+2024-07-22 08:06:48.149409 INFO::Fitting model to feature number 117, PWY_6969_TCA_cyc_V
+2024-07-22 08:06:48.171403 INFO::Fitting model to feature number 118, PWY_7111_pyruvate_fermentation_to_isobutanol
+2024-07-22 08:06:48.195439 INFO::Fitting model to feature number 119, PWY_7184_pyrimidine_dnt_de_novo_biosyn_I
+2024-07-22 08:06:48.223107 INFO::Fitting model to feature number 120, PWY_7187_pyrimidine_dnt_de_novo_biosyn_II
+2024-07-22 08:06:48.244675 INFO::Fitting model to feature number 121, PWY_7196_SP_of_pyrimidine_rns_salvage
+2024-07-22 08:06:48.26482 INFO::Fitting model to feature number 122, PWY_7197_pyrimidine_dnt_phosphorylation
+2024-07-22 08:06:48.287489 INFO::Fitting model to feature number 123, PWY_7199_pyrimidine_dns_salvage
+2024-07-22 08:06:48.30962 INFO::Fitting model to feature number 124, PWY_7208_SP_of_pyrimidine_nucleobases_salvage
+2024-07-22 08:06:48.337199 INFO::Fitting model to feature number 125, PWY_7211_SP_of_pyrimidine_dnt_de_novo_biosyn
+2024-07-22 08:06:48.358074 INFO::Fitting model to feature number 126, PWY_7219_adenosine_rnt_de_novo_biosyn
+2024-07-22 08:06:48.380235 INFO::Fitting model to feature number 127, PWY_7220_adenosine_dnt_de_novo_biosyn_II
+2024-07-22 08:06:48.402594 INFO::Fitting model to feature number 128, PWY_7221_guanosine_rnt_de_novo_biosyn
+2024-07-22 08:06:48.425299 INFO::Fitting model to feature number 129, PWY_7222_guanosine_dnt_de_novo_biosyn_II
+2024-07-22 08:06:48.452427 INFO::Fitting model to feature number 130, PWY_7228_SP_of_guanosine_nt_de_novo_biosyn_I
+2024-07-22 08:06:48.474576 INFO::Fitting model to feature number 131, PWY_7229_SP_of_adenosine_nt_de_novo_biosyn_I
+2024-07-22 08:06:48.496971 INFO::Fitting model to feature number 132, PWY_7234_inosine_5_phosphate_biosyn_III
+2024-07-22 08:06:48.519043 INFO::Fitting model to feature number 133, PWY_7237_myo__chiro__scillo_inositol_deg
+2024-07-22 08:06:48.539584 INFO::Fitting model to feature number 134, PWY_7242_D_fructuronate_deg
+2024-07-22 08:06:48.573604 INFO::Fitting model to feature number 135, PWY_724_SP_of_L_lysine_L_threonine__L_methionine_biosyn_II
+2024-07-22 08:06:48.59665 INFO::Fitting model to feature number 136, PWY_7282_4_amino_2_methyl_5_phosphomethylpyrimidine_biosyn
+2024-07-22 08:06:48.617744 INFO::Fitting model to feature number 137, PWY_7323_SP_of_GDP_mannose_derived_O_antigen_building_blocks_biosyn
+2024-07-22 08:06:48.638475 INFO::Fitting model to feature number 138, PWY_7357_thiamin_formation_from_pyrithiamine__oxythiamine
+2024-07-22 08:06:48.659588 INFO::Fitting model to feature number 139, PWY_7383_anaerobic_energy_metabolism
+2024-07-22 08:06:48.799041 INFO::Fitting model to feature number 140, PWY_7388_octanoyl_acyl_carrier_protein_biosyn
+2024-07-22 08:06:48.820611 INFO::Fitting model to feature number 141, PWY_7400_L_arginine_biosyn_IV
+2024-07-22 08:06:48.841113 INFO::Fitting model to feature number 142, PWY_7456_mannan_deg
+2024-07-22 08:06:48.859813 INFO::Fitting model to feature number 143, PWY_7539_6_hydroxymethyl_dihydropterin_diphosphate_biosyn_III
+2024-07-22 08:06:48.880738 INFO::Fitting model to feature number 144, PWY_7560_methylerythritol_phosphate_pwy_II
+2024-07-22 08:06:48.899949 INFO::Fitting model to feature number 145, PWY_7663_gondoate_biosyn
+2024-07-22 08:06:48.926628 INFO::Fitting model to feature number 146, PWY_7664_oleate_biosyn_IV
+2024-07-22 08:06:48.947448 INFO::Fitting model to feature number 147, PWY_841_SP_of_purine_nt_de_novo_biosyn_I
+2024-07-22 08:06:48.96884 INFO::Fitting model to feature number 148, PWY0_1261_anhydromuropeptides_recycling
+2024-07-22 08:06:48.988117 INFO::Fitting model to feature number 149, PWY0_1296_purine_rns_deg
+2024-07-22 08:06:49.010738 INFO::Fitting model to feature number 150, PWY0_1297_SP_of_purine_dns_deg
+2024-07-22 08:06:49.036823 INFO::Fitting model to feature number 151, PWY0_1298_SP_of_pyrimidine_dns_deg
+2024-07-22 08:06:49.05752 INFO::Fitting model to feature number 152, PWY0_1319_CDP_diacylglycerol_biosyn_II
+2024-07-22 08:06:49.081304 INFO::Fitting model to feature number 153, PWY0_1479_tRNA_processing
+2024-07-22 08:06:49.102251 INFO::Fitting model to feature number 154, PWY0_1586_peptidoglycan_maturation
+2024-07-22 08:06:49.12554 INFO::Fitting model to feature number 155, PWY0_162_SP_of_pyrimidine_rnt_de_novo_biosyn
+2024-07-22 08:06:49.15287 INFO::Fitting model to feature number 156, PWY0_166_SP_of_pyrimidine_dnt_de_novo_biosyn
+2024-07-22 08:06:49.175201 INFO::Fitting model to feature number 157, PWY0_845_SP_of_pyridoxal_5_phosphate_biosyn__salvage
+2024-07-22 08:06:49.197707 INFO::Fitting model to feature number 158, PWY0_862_dodec_5_enoate_biosyn
+2024-07-22 08:06:49.218836 INFO::Fitting model to feature number 159, PWY4FS_7_phosphatidylglycerol_biosyn_I
+2024-07-22 08:06:49.23996 INFO::Fitting model to feature number 160, PWY4FS_8_phosphatidylglycerol_biosyn_II
+2024-07-22 08:06:49.265568 INFO::Fitting model to feature number 161, PWY66_399_gluconeogenesis_III
+2024-07-22 08:06:49.287301 INFO::Fitting model to feature number 162, PWY66_400_glycolysis_VI
+2024-07-22 08:06:49.309271 INFO::Fitting model to feature number 163, PWY66_409_SP_of_purine_nt_salvage
+2024-07-22 08:06:49.328664 INFO::Fitting model to feature number 164, PWY66_422_D_galactose_deg_V
+2024-07-22 08:06:49.351205 INFO::Fitting model to feature number 165, PWYG_321_mycolate_biosyn
+2024-07-22 08:06:49.37621 INFO::Fitting model to feature number 166, PYRIDNUCSYN_PWY_NAD_biosyn_I
+2024-07-22 08:06:49.398222 INFO::Fitting model to feature number 167, PYRIDOXSYN_PWY_pyridoxal_5_phosphate_biosyn_I
+2024-07-22 08:06:49.421302 INFO::Fitting model to feature number 168, RHAMCAT_PWY_L_rhamnose_deg_I
+2024-07-22 08:06:49.443575 INFO::Fitting model to feature number 169, RIBOSYN2_PWY_flavin_biosyn_I
+2024-07-22 08:06:49.464337 INFO::Fitting model to feature number 170, SALVADEHYPOX_PWY_adenosine_nt_deg_II
+2024-07-22 08:06:49.490599 INFO::Fitting model to feature number 171, SER_GLYSYN_PWY_SP_of_L_serine__glycine_biosyn_I
+2024-07-22 08:06:49.513332 INFO::Fitting model to feature number 172, TCA_GLYOX_BYPASS_SP_of_glyoxylate_bypass__TCA
+2024-07-22 08:06:49.531935 INFO::Fitting model to feature number 173, TCA_TCA_cyc_I
+2024-07-22 08:06:49.552096 INFO::Fitting model to feature number 174, THISYNARA_PWY_SP_of_thiamin_diphosphate_biosyn_III
+2024-07-22 08:06:49.574204 INFO::Fitting model to feature number 175, THRESYN_PWY_SP_of_L_threonine_biosyn
+2024-07-22 08:06:49.601292 INFO::Fitting model to feature number 176, TRNA_CHARGING_PWY_tRNA_charging
+2024-07-22 08:06:49.623316 INFO::Fitting model to feature number 177, UDPNAGSYN_PWY_UDP_N_acetyl_D_glucosamine_biosyn_I
+2024-07-22 08:06:49.644216 INFO::Fitting model to feature number 178, VALSYN_PWY_L_valine_biosyn
+2024-07-22 08:06:49.672567 INFO::Performing tests against medians
+2024-07-22 08:06:50.298456 INFO::Counting total values for each feature
+2024-07-22 08:06:50.316588 INFO::Running the logistic model component
+2024-07-22 08:06:50.317594 INFO::Fitting model to feature number 1, X1CMET2_PWY_N10_formyl_tetrahydrofolate_biosyn
+2024-07-22 08:06:57.697663 INFO::Fitting model to feature number 2, ANAEROFRUCAT_PWY_homolactic_fermentation
+2024-07-22 08:06:58.875309 INFO::Fitting model to feature number 3, ANAGLYCOLYSIS_PWY_glycolysis_III
+2024-07-22 08:07:00.448296 INFO::Fitting model to feature number 4, ARGININE_SYN4_PWY_L_ornithine_de_novo_biosyn
+2024-07-22 08:07:26.577575 WARNING::Fitting problem for feature 4 a warning was issued
+2024-07-22 08:07:26.579458 WARNING::Fitting problem for feature 4 a warning was issued
+2024-07-22 08:07:26.586151 INFO::Fitting model to feature number 5, ARGSYN_PWY_L_arginine_biosyn_I
+2024-07-22 08:07:28.264875 INFO::Fitting model to feature number 6, ARGSYNBSUB_PWY_L_arginine_biosyn_II
+2024-07-22 08:07:29.126339 INFO::Fitting model to feature number 7, ARO_PWY_chorismate_biosyn_I
+2024-07-22 08:07:30.214893 INFO::Fitting model to feature number 8, ASPASN_PWY_SP_of_L_aspartate__L_asparagine_biosyn
+2024-07-22 08:07:31.112983 INFO::Fitting model to feature number 9, BRANCHED_CHAIN_AA_SYN_PWY_SP_of_branched_amino_acid_biosyn
+2024-07-22 08:07:32.514695 INFO::Fitting model to feature number 10, CALVIN_PWY_Calvin_Benson_Bassham_cyc
+2024-07-22 08:07:37.308647 WARNING::Fitting problem for feature 10 returning NA
+2024-07-22 08:07:37.310033 INFO::Fitting model to feature number 11, CITRULBIO_PWY_L_citrulline_biosyn
+2024-07-22 08:07:39.495572 INFO::Fitting model to feature number 12, COA_PWY_1_coenzyme_A_biosyn_II
+2024-07-22 08:07:43.493044 INFO::Fitting model to feature number 13, COA_PWY_coenzyme_A_biosyn_I
+2024-07-22 08:07:44.632429 INFO::Fitting model to feature number 14, COBALSYN_PWY_adenosylcobalamin_salvage_from_cobinamide_I
+2024-07-22 08:07:45.821633 INFO::Fitting model to feature number 15, COMPLETE_ARO_PWY_SP_of_aromatic_amino_acid_biosyn
+2024-07-22 08:07:46.754642 INFO::Fitting model to feature number 16, DAPLYSINESYN_PWY_L_lysine_biosyn_I
+2024-07-22 08:07:48.277983 INFO::Fitting model to feature number 17, DENOVOPURINE2_PWY_SP_of_purine_nt_de_novo_biosyn_II
+2024-07-22 08:07:49.565669 INFO::Fitting model to feature number 18, DTDPRHAMSYN_PWY_dTDP_L_rhamnose_biosyn_I
+2024-07-22 08:07:51.351177 INFO::Fitting model to feature number 19, FASYN_ELONG_PWY_fatty_acid_elongation__saturated
+2024-07-22 08:07:52.137214 INFO::Fitting model to feature number 20, FASYN_INITIAL_PWY_SP_of_fatty_acid_biosyn_initiation
+2024-07-22 08:07:53.453458 INFO::Fitting model to feature number 21, FUCCAT_PWY_fucose_deg
+2024-07-22 08:07:54.091122 INFO::Fitting model to feature number 22, GALACT_GLUCUROCAT_PWY_SP_of_hexuronide__hexuronate_deg
+2024-07-22 08:07:55.607782 INFO::Fitting model to feature number 23, GALACTUROCAT_PWY_D_galacturonate_deg_I
+2024-07-22 08:07:56.315958 INFO::Fitting model to feature number 24, GLCMANNANAUT_PWY_SP_of_N_acetylglucosamine_N_acetylmannosamine__N_acetylneuraminate_deg
+2024-07-22 08:07:58.646073 INFO::Fitting model to feature number 25, GLUCONEO_PWY_gluconeogenesis_I
+2024-07-22 08:07:59.095176 INFO::Fitting model to feature number 26, GLUCOSE1PMETAB_PWY_glucose__glucose_1_phosphate_deg
+2024-07-22 08:07:59.892593 INFO::Fitting model to feature number 27, GLUCUROCAT_PWY_SP_of_beta_D_glucuronide__D_glucuronate_deg
+2024-07-22 08:08:00.956561 INFO::Fitting model to feature number 28, GLYCOGENSYNTH_PWY_glycogen_biosyn_I
+2024-07-22 08:08:02.146548 INFO::Fitting model to feature number 29, GLYCOLYSIS_E_D_SP_of_glycolysis__Entner_Doudoroff
+2024-07-22 08:08:02.805736 INFO::Fitting model to feature number 30, GLYCOLYSIS_glycolysis_I
+2024-07-22 08:08:02.940143 INFO::Fitting model to feature number 31, GLYOXYLATE_BYPASS_glyoxylate_cyc
+2024-07-22 08:08:03.493323 INFO::Fitting model to feature number 32, HISDEG_PWY_L_histidine_deg_I
+2024-07-22 08:08:04.262122 INFO::Fitting model to feature number 33, HISTSYN_PWY_L_histidine_biosyn
+2024-07-22 08:08:05.469926 INFO::Fitting model to feature number 34, ILEUSYN_PWY_L_isoleucine_biosyn_I
+2024-07-22 08:08:06.391837 INFO::Fitting model to feature number 35, MET_SAM_PWY_SP_of_S_adenosyl_L_methionine_biosyn
+2024-07-22 08:08:06.968015 INFO::Fitting model to feature number 36, METSYN_PWY_L_homoserine__L_methionine_biosyn
+2024-07-22 08:08:07.692226 INFO::Fitting model to feature number 37, NAGLIPASYN_PWY_lipid_IVA_biosyn
+2024-07-22 08:08:08.891605 INFO::Fitting model to feature number 38, NONMEVIPP_PWY_methylerythritol_phosphate_pwy_I
+2024-07-22 08:08:09.700486 INFO::Fitting model to feature number 39, NONOXIPENT_PWY_pentose_phosphate_pwy
+2024-07-22 08:08:11.161716 INFO::Fitting model to feature number 40, OANTIGEN_PWY_O_antigen_building_blocks_biosyn
+2024-07-22 08:08:12.0845 INFO::Fitting model to feature number 41, P105_PWY_TCA_cyc_IV
+2024-07-22 08:08:12.278981 INFO::Fitting model to feature number 42, P108_PWY_pyruvate_fermentation_to_propanoate_I
+2024-07-22 08:08:12.765145 INFO::Fitting model to feature number 43, P161_PWY_acetylene_deg
+2024-07-22 08:08:13.521414 INFO::Fitting model to feature number 44, P42_PWY_incomplete_reductive_TCA_cyc
+2024-07-22 08:08:14.597471 INFO::Fitting model to feature number 45, P441_PWY_SP_of_N_acetylneuraminate_deg
+2024-07-22 08:08:15.402111 INFO::Fitting model to feature number 46, P461_PWY_hexitol_fermentation_to_lactate_formate_ethanol__acetate
+2024-07-22 08:08:16.069241 INFO::Fitting model to feature number 47, PANTO_PWY_phosphopantothenate_biosyn_I
+2024-07-22 08:08:23.428542 WARNING::Fitting problem for feature 47 a warning was issued
+2024-07-22 08:08:23.429732 WARNING::Fitting problem for feature 47 a warning was issued
+2024-07-22 08:08:23.436598 INFO::Fitting model to feature number 48, PANTOSYN_PWY_pantothenate__coenzyme_A_biosyn_I
+2024-07-22 08:08:24.34417 INFO::Fitting model to feature number 49, PENTOSE_P_PWY_pentose_phosphate_pwy
+2024-07-22 08:08:25.316463 INFO::Fitting model to feature number 50, PEPTIDOGLYCANSYN_PWY_peptidoglycan_biosyn_I
+2024-07-22 08:08:26.257044 INFO::Fitting model to feature number 51, PHOSLIPSYN_PWY_SP_of_phospholipid_biosyn_I
+2024-07-22 08:08:28.55921 WARNING::Fitting problem for feature 51 a warning was issued
+2024-07-22 08:08:28.564714 INFO::Fitting model to feature number 52, PRPP_PWY_SP_of_histidine_purine__pyrimidine_biosyn
+2024-07-22 08:08:29.134858 INFO::Fitting model to feature number 53, PWY_1042_glycolysis_IV
+2024-07-22 08:08:29.136029 INFO::Fitting model to feature number 54, PWY_1269_CMP_3_deoxy_D_manno_octulosonate_biosyn_I
+2024-07-22 08:08:30.417353 INFO::Fitting model to feature number 55, PWY_2941_L_lysine_biosyn_II
+2024-07-22 08:08:32.50915 INFO::Fitting model to feature number 56, PWY_2942_L_lysine_biosyn_III
+2024-07-22 08:08:35.657717 INFO::Fitting model to feature number 57, PWY_3001_SP_of_L_isoleucine_biosyn_I
+2024-07-22 08:08:36.914248 INFO::Fitting model to feature number 58, PWY_3841_folate_transformations_II
+2024-07-22 08:08:37.048832 INFO::Fitting model to feature number 59, PWY_4041_beta_glutamyl_cyc
+2024-07-22 08:08:37.415337 INFO::Fitting model to feature number 60, PWY_4242_pantothenate__coenzyme_A_biosyn_III
+2024-07-22 08:08:38.593488 INFO::Fitting model to feature number 61, PWY_4981_L_proline_biosyn_II
+2024-07-22 08:08:39.290511 INFO::Fitting model to feature number 62, PWY_4984_urea_cyc
+2024-07-22 08:08:40.393306 INFO::Fitting model to feature number 63, PWY_5030_L_histidine_deg_III
+2024-07-22 08:08:41.181656 INFO::Fitting model to feature number 64, PWY_5083_NAD_NADH_phosphorylation__dephosphorylation
+2024-07-22 08:08:42.536794 INFO::Fitting model to feature number 65, PWY_5097_L_lysine_biosyn_VI
+2024-07-22 08:08:44.022887 INFO::Fitting model to feature number 66, PWY_5100_pyruvate_fermentation_to_acetate__lactate_II
+2024-07-22 08:08:44.745983 INFO::Fitting model to feature number 67, PWY_5101_L_isoleucine_biosyn_II
+2024-07-22 08:08:45.814862 INFO::Fitting model to feature number 68, PWY_5103_L_isoleucine_biosyn_III
+2024-07-22 08:08:47.313671 INFO::Fitting model to feature number 69, PWY_5104_L_isoleucine_biosyn_IV
+2024-07-22 08:08:48.099311 INFO::Fitting model to feature number 70, PWY_5154_L_arginine_biosyn_III
+2024-07-22 08:08:49.406892 INFO::Fitting model to feature number 71, PWY_5173_SP_of_acetyl_CoA_biosyn
+2024-07-22 08:08:49.926854 INFO::Fitting model to feature number 72, PWY_5177_glutaryl_CoA_deg
+2024-07-22 08:08:50.811715 INFO::Fitting model to feature number 73, PWY_5188_tetrapyrrole_biosyn_I
+2024-07-22 08:08:51.673752 INFO::Fitting model to feature number 74, PWY_5347_SP_of_L_methionine_biosyn
+2024-07-22 08:08:52.42414 INFO::Fitting model to feature number 75, PWY_5484_glycolysis_II
+2024-07-22 08:08:55.079513 INFO::Fitting model to feature number 76, PWY_5659_GDP_mannose_biosyn
+2024-07-22 08:09:15.109989 INFO::Fitting model to feature number 77, PWY_5667_CDP_diacylglycerol_biosyn_I
+2024-07-22 08:09:16.814804 INFO::Fitting model to feature number 78, PWY_5676_acetyl_CoA_fermentation_to_butanoate_II
+2024-07-22 08:09:17.527676 INFO::Fitting model to feature number 79, PWY_5686_UMP_biosyn
+2024-07-22 08:09:18.574214 INFO::Fitting model to feature number 80, PWY_5690_TCA_cyc_II
+2024-07-22 08:09:19.685067 INFO::Fitting model to feature number 81, PWY_5695_urate_biosyn_inosine_5_phosphate_deg
+2024-07-22 08:09:20.729963 INFO::Fitting model to feature number 82, PWY_5723_Rubisco_shunt
+2024-07-22 08:09:21.301865 INFO::Fitting model to feature number 83, PWY_5913_TCA_cyc_VI
+2024-07-22 08:09:21.666318 INFO::Fitting model to feature number 84, PWY_5971_palmitate_biosyn_II
+2024-07-22 08:09:22.069977 INFO::Fitting model to feature number 85, PWY_5973_cis_vaccenate_biosyn
+2024-07-22 08:09:22.199647 INFO::Fitting model to feature number 86, PWY_5989_stearate_biosyn_II
+2024-07-22 08:09:23.416596 INFO::Fitting model to feature number 87, PWY_6121_5_aminoimidazole_rnt_biosyn_I
+2024-07-22 08:09:30.101381 WARNING::Fitting problem for feature 87 returning NA
+2024-07-22 08:09:30.103112 INFO::Fitting model to feature number 88, PWY_6122_5_aminoimidazole_rnt_biosyn_II
+2024-07-22 08:09:47.869713 WARNING::Fitting problem for feature 88 returning NA
+2024-07-22 08:09:47.872378 INFO::Fitting model to feature number 89, PWY_6123_inosine_5_phosphate_biosyn_I
+2024-07-22 08:09:49.763173 INFO::Fitting model to feature number 90, PWY_6124_inosine_5_phosphate_biosyn_II
+2024-07-22 08:10:08.010129 INFO::Fitting model to feature number 91, PWY_6125_SP_of_guanosine_nt_de_novo_biosyn_II
+2024-07-22 08:10:08.607804 INFO::Fitting model to feature number 92, PWY_6126_SP_of_adenosine_nt_de_novo_biosyn_II
+2024-07-22 08:10:09.143643 INFO::Fitting model to feature number 93, PWY_6147_6_hydroxymethyl_dihydropterin_diphosphate_biosyn_I
+2024-07-22 08:10:10.472626 INFO::Fitting model to feature number 94, PWY_6151_S_adenosyl_L_methionine_cyc_I
+2024-07-22 08:10:11.663753 INFO::Fitting model to feature number 95, PWY_6163_chorismate_biosyn_from_3_dehydroquinate
+2024-07-22 08:10:12.312383 INFO::Fitting model to feature number 96, PWY_6168_flavin_biosyn_III
+2024-07-22 08:10:14.194979 INFO::Fitting model to feature number 97, PWY_621_sucrose_deg_III
+2024-07-22 08:10:15.097501 INFO::Fitting model to feature number 98, PWY_6270_isoprene_biosyn_I
+2024-07-22 08:10:15.62705 INFO::Fitting model to feature number 99, PWY_6277_SP_of_5_aminoimidazole_rnt_biosyn
+2024-07-22 08:10:33.495943 WARNING::Fitting problem for feature 99 returning NA
+2024-07-22 08:10:33.498403 INFO::Fitting model to feature number 100, PWY_6282_palmitoleate_biosyn_I
+2024-07-22 08:10:34.816282 INFO::Fitting model to feature number 101, PWY_6317_galactose_deg_I
+2024-07-22 08:10:36.952227 INFO::Fitting model to feature number 102, PWY_6353_purine_nt_deg_II
+2024-07-22 08:10:37.806273 INFO::Fitting model to feature number 103, PWY_6385_peptidoglycan_biosyn_III
+2024-07-22 08:10:48.91221 INFO::Fitting model to feature number 104, PWY_6386_UDP_N_acetylmuramoyl_pentapeptide_biosyn_II
+2024-07-22 08:10:50.034596 INFO::Fitting model to feature number 105, PWY_6387_UDP_N_acetylmuramoyl_pentapeptide_biosyn_I
+2024-07-22 08:10:51.495794 INFO::Fitting model to feature number 106, PWY_6507_4_deoxy_L_threo_hex_4_enopyranuronate_deg
+2024-07-22 08:10:52.562414 INFO::Fitting model to feature number 107, PWY_6527_stachyose_deg
+2024-07-22 08:10:54.145215 INFO::Fitting model to feature number 108, PWY_6545_pyrimidine_dnt_de_novo_biosyn_III
+2024-07-22 08:10:55.173741 INFO::Fitting model to feature number 109, PWY_6608_guanosine_nt_deg_III
+2024-07-22 08:10:56.364586 INFO::Fitting model to feature number 110, PWY_6609_adenine__adenosine_salvage_III
+2024-07-22 08:11:20.613593 INFO::Fitting model to feature number 111, PWY_6700_queuosine_biosyn
+2024-07-22 08:11:26.254992 WARNING::Fitting problem for feature 111 a warning was issued
+2024-07-22 08:11:26.255966 WARNING::Fitting problem for feature 111 a warning was issued
+2024-07-22 08:11:26.261955 INFO::Fitting model to feature number 112, PWY_6703_preQ0_biosyn
+2024-07-22 08:11:27.768887 INFO::Fitting model to feature number 113, PWY_6737_starch_deg_V
+2024-07-22 08:11:29.230618 INFO::Fitting model to feature number 114, PWY_6897_thiamin_salvage_II
+2024-07-22 08:11:29.900019 INFO::Fitting model to feature number 115, PWY_6901_SP_of_glucose__xylose_deg
+2024-07-22 08:11:31.55012 INFO::Fitting model to feature number 116, PWY_6936_seleno_amino_acid_biosyn
+2024-07-22 08:11:32.691682 INFO::Fitting model to feature number 117, PWY_6969_TCA_cyc_V
+2024-07-22 08:11:33.390413 INFO::Fitting model to feature number 118, PWY_7111_pyruvate_fermentation_to_isobutanol
+2024-07-22 08:11:35.381717 INFO::Fitting model to feature number 119, PWY_7184_pyrimidine_dnt_de_novo_biosyn_I
+2024-07-22 08:11:36.444077 INFO::Fitting model to feature number 120, PWY_7187_pyrimidine_dnt_de_novo_biosyn_II
+2024-07-22 08:11:37.810781 INFO::Fitting model to feature number 121, PWY_7196_SP_of_pyrimidine_rns_salvage
+2024-07-22 08:11:39.062075 INFO::Fitting model to feature number 122, PWY_7197_pyrimidine_dnt_phosphorylation
+2024-07-22 08:11:40.31387 INFO::Fitting model to feature number 123, PWY_7199_pyrimidine_dns_salvage
+2024-07-22 08:11:41.151633 INFO::Fitting model to feature number 124, PWY_7208_SP_of_pyrimidine_nucleobases_salvage
+2024-07-22 08:11:43.579099 INFO::Fitting model to feature number 125, PWY_7211_SP_of_pyrimidine_dnt_de_novo_biosyn
+2024-07-22 08:11:44.320783 INFO::Fitting model to feature number 126, PWY_7219_adenosine_rnt_de_novo_biosyn
+2024-07-22 08:11:44.322016 INFO::Fitting model to feature number 127, PWY_7220_adenosine_dnt_de_novo_biosyn_II
+2024-07-22 08:11:44.658723 INFO::Fitting model to feature number 128, PWY_7221_guanosine_rnt_de_novo_biosyn
+2024-07-22 08:11:46.000031 INFO::Fitting model to feature number 129, PWY_7222_guanosine_dnt_de_novo_biosyn_II
+2024-07-22 08:11:46.341955 INFO::Fitting model to feature number 130, PWY_7228_SP_of_guanosine_nt_de_novo_biosyn_I
+2024-07-22 08:11:47.498534 INFO::Fitting model to feature number 131, PWY_7229_SP_of_adenosine_nt_de_novo_biosyn_I
+2024-07-22 08:11:48.177506 INFO::Fitting model to feature number 132, PWY_7234_inosine_5_phosphate_biosyn_III
+2024-07-22 08:11:49.449798 INFO::Fitting model to feature number 133, PWY_7237_myo__chiro__scillo_inositol_deg
+2024-07-22 08:11:49.990016 INFO::Fitting model to feature number 134, PWY_7242_D_fructuronate_deg
+2024-07-22 08:11:50.773151 INFO::Fitting model to feature number 135, PWY_724_SP_of_L_lysine_L_threonine__L_methionine_biosyn_II
+2024-07-22 08:11:52.142007 INFO::Fitting model to feature number 136, PWY_7282_4_amino_2_methyl_5_phosphomethylpyrimidine_biosyn
+2024-07-22 08:11:52.751092 INFO::Fitting model to feature number 137, PWY_7323_SP_of_GDP_mannose_derived_O_antigen_building_blocks_biosyn
+2024-07-22 08:11:53.794383 INFO::Fitting model to feature number 138, PWY_7357_thiamin_formation_from_pyrithiamine__oxythiamine
+2024-07-22 08:11:54.770907 INFO::Fitting model to feature number 139, PWY_7383_anaerobic_energy_metabolism
+2024-07-22 08:11:55.596927 INFO::Fitting model to feature number 140, PWY_7388_octanoyl_acyl_carrier_protein_biosyn
+2024-07-22 08:11:57.190243 INFO::Fitting model to feature number 141, PWY_7400_L_arginine_biosyn_IV
+2024-07-22 08:11:57.791696 INFO::Fitting model to feature number 142, PWY_7456_mannan_deg
+2024-07-22 08:11:59.211082 INFO::Fitting model to feature number 143, PWY_7539_6_hydroxymethyl_dihydropterin_diphosphate_biosyn_III
+2024-07-22 08:12:00.393629 INFO::Fitting model to feature number 144, PWY_7560_methylerythritol_phosphate_pwy_II
+2024-07-22 08:12:00.672735 INFO::Fitting model to feature number 145, PWY_7663_gondoate_biosyn
+2024-07-22 08:12:02.383674 INFO::Fitting model to feature number 146, PWY_7664_oleate_biosyn_IV
+2024-07-22 08:12:03.820717 INFO::Fitting model to feature number 147, PWY_841_SP_of_purine_nt_de_novo_biosyn_I
+2024-07-22 08:12:04.604263 INFO::Fitting model to feature number 148, PWY0_1261_anhydromuropeptides_recycling
+2024-07-22 08:12:05.186702 INFO::Fitting model to feature number 149, PWY0_1296_purine_rns_deg
+2024-07-22 08:12:06.776651 INFO::Fitting model to feature number 150, PWY0_1297_SP_of_purine_dns_deg
+2024-07-22 08:12:08.200982 INFO::Fitting model to feature number 151, PWY0_1298_SP_of_pyrimidine_dns_deg
+2024-07-22 08:12:08.718941 INFO::Fitting model to feature number 152, PWY0_1319_CDP_diacylglycerol_biosyn_II
+2024-07-22 08:12:09.970712 INFO::Fitting model to feature number 153, PWY0_1479_tRNA_processing
+2024-07-22 08:12:11.179999 INFO::Fitting model to feature number 154, PWY0_1586_peptidoglycan_maturation
+2024-07-22 08:12:12.497707 INFO::Fitting model to feature number 155, PWY0_162_SP_of_pyrimidine_rnt_de_novo_biosyn
+2024-07-22 08:12:13.630621 INFO::Fitting model to feature number 156, PWY0_166_SP_of_pyrimidine_dnt_de_novo_biosyn
+2024-07-22 08:12:14.904407 INFO::Fitting model to feature number 157, PWY0_845_SP_of_pyridoxal_5_phosphate_biosyn__salvage
+2024-07-22 08:12:15.046744 INFO::Fitting model to feature number 158, PWY0_862_dodec_5_enoate_biosyn
+2024-07-22 08:12:16.430805 INFO::Fitting model to feature number 159, PWY4FS_7_phosphatidylglycerol_biosyn_I
+2024-07-22 08:12:17.305542 INFO::Fitting model to feature number 160, PWY4FS_8_phosphatidylglycerol_biosyn_II
+2024-07-22 08:12:18.269184 INFO::Fitting model to feature number 161, PWY66_399_gluconeogenesis_III
+2024-07-22 08:12:19.335129 INFO::Fitting model to feature number 162, PWY66_400_glycolysis_VI
+2024-07-22 08:12:22.90006 INFO::Fitting model to feature number 163, PWY66_409_SP_of_purine_nt_salvage
+2024-07-22 08:12:23.471941 INFO::Fitting model to feature number 164, PWY66_422_D_galactose_deg_V
+2024-07-22 08:12:23.610005 INFO::Fitting model to feature number 165, PWYG_321_mycolate_biosyn
+2024-07-22 08:12:24.113635 INFO::Fitting model to feature number 166, PYRIDNUCSYN_PWY_NAD_biosyn_I
+2024-07-22 08:12:26.312175 INFO::Fitting model to feature number 167, PYRIDOXSYN_PWY_pyridoxal_5_phosphate_biosyn_I
+2024-07-22 08:12:26.454213 INFO::Fitting model to feature number 168, RHAMCAT_PWY_L_rhamnose_deg_I
+2024-07-22 08:12:27.780992 INFO::Fitting model to feature number 169, RIBOSYN2_PWY_flavin_biosyn_I
+2024-07-22 08:12:28.449629 INFO::Fitting model to feature number 170, SALVADEHYPOX_PWY_adenosine_nt_deg_II
+2024-07-22 08:12:29.678068 INFO::Fitting model to feature number 171, SER_GLYSYN_PWY_SP_of_L_serine__glycine_biosyn_I
+2024-07-22 08:12:32.633222 INFO::Fitting model to feature number 172, TCA_GLYOX_BYPASS_SP_of_glyoxylate_bypass__TCA
+2024-07-22 08:12:33.129836 INFO::Fitting model to feature number 173, TCA_TCA_cyc_I
+2024-07-22 08:12:33.579634 INFO::Fitting model to feature number 174, THISYNARA_PWY_SP_of_thiamin_diphosphate_biosyn_III
+2024-07-22 08:12:34.79265 INFO::Fitting model to feature number 175, THRESYN_PWY_SP_of_L_threonine_biosyn
+2024-07-22 08:12:36.797726 INFO::Fitting model to feature number 176, TRNA_CHARGING_PWY_tRNA_charging
+2024-07-22 08:12:37.615393 INFO::Fitting model to feature number 177, UDPNAGSYN_PWY_UDP_N_acetyl_D_glucosamine_biosyn_I
+2024-07-22 08:12:38.271303 INFO::Fitting model to feature number 178, VALSYN_PWY_L_valine_biosyn
+2024-07-22 08:12:40.304073 INFO::Counting total values for each feature
+2024-07-22 08:12:40.337337 INFO::Writing residuals to file demo_output_mtx_mgx/fits/residuals_LM.rds
+2024-07-22 08:12:40.378676 INFO::Writing fitted values to file demo_output_mtx_mgx/fits/fitted_LM.rds
+2024-07-22 08:12:40.410378 INFO::Writing extracted random effects to file demo_output_mtx_mgx/fits/ranef_LM.rds
+2024-07-22 08:12:40.415368 INFO::Writing residuals to file demo_output_mtx_mgx/fits/residuals_logistic.rds
+2024-07-22 08:12:40.502858 INFO::Writing fitted values to file demo_output_mtx_mgx/fits/fitted_logistic.rds
+2024-07-22 08:12:40.628033 INFO::Writing extracted random effects to file demo_output_mtx_mgx/fits/ranef_logistic.rds
+2024-07-22 08:12:40.634063 INFO::Writing all the results to file (ordered by increasing joint q-values): demo_output_mtx_mgx/all_results.tsv
+2024-07-22 08:12:40.644493 INFO::Writing the significant results without errors (those which are less than or equal to the threshold of 0.100000 ) to file (ordered by increasing joint q-values): demo_output_mtx_mgx/significant_results.tsv
+2024-07-22 08:12:40.645871 INFO::Creating output figures folder
+2024-07-22 08:12:40.646864 INFO::Writing summary plot of significant results to file: demo_output_mtx_mgx/figures/summary_plot.pdf
+2024-07-22 08:12:41.807931 INFO::Writing association plots (one for each significant association) to output folder: demo_output_mtx_mgx/figures
+2024-07-22 08:12:41.808531 INFO::Plotting associations from most to least significant, grouped by metadata
+2024-07-22 08:12:41.810587 INFO::Creating box plot for categorical data (linear), dysbiosis_state vs ASPASN_PWY_SP_of_L_aspartate__L_asparagine_biosyn
+2024-07-22 08:12:41.818794 INFO::Creating box plot for categorical data (linear), dysbiosis_state vs NONMEVIPP_PWY_methylerythritol_phosphate_pwy_I
+2024-07-22 08:12:41.826486 INFO::Creating box plot for categorical data (linear), dysbiosis_state vs PWY_5097_L_lysine_biosyn_VI
+2024-07-22 08:12:41.833859 INFO::Creating box plot for categorical data (linear), dysbiosis_state vs PWY_2942_L_lysine_biosyn_III
+2024-07-22 08:12:41.841267 INFO::Creating box plot for categorical data (linear), dysbiosis_state vs PWY0_162_SP_of_pyrimidine_rnt_de_novo_biosyn
+2024-07-22 08:12:41.848749 INFO::Creating box plot for categorical data (linear), dysbiosis_state vs PWY_7197_pyrimidine_dnt_phosphorylation
+2024-07-22 08:12:41.856237 INFO::Creating box plot for categorical data (linear), dysbiosis_state vs PWY_5173_SP_of_acetyl_CoA_biosyn
+2024-07-22 08:12:41.863921 INFO::Creating tile plot for categorical data (logistic), dysbiosis_state vs PWY_5723_Rubisco_shunt
+2024-07-22 08:12:41.875045 INFO::Creating box plot for categorical data (linear), dysbiosis_state vs X1CMET2_PWY_N10_formyl_tetrahydrofolate_biosyn
+2024-07-22 08:12:41.882415 INFO::Creating box plot for categorical data (linear), dysbiosis_state vs PWY_6386_UDP_N_acetylmuramoyl_pentapeptide_biosyn_II
+2024-07-22 08:12:41.895551 INFO::Creating box plot for categorical data (linear), dysbiosis_state vs PWY_7228_SP_of_guanosine_nt_de_novo_biosyn_I
+2024-07-22 08:12:41.903862 INFO::Creating box plot for categorical data (linear), dysbiosis_state vs PWY_1042_glycolysis_IV
+2024-07-22 08:12:41.911367 INFO::Creating box plot for categorical data (linear), dysbiosis_state vs PWY0_1261_anhydromuropeptides_recycling
+2024-07-22 08:12:41.918673 INFO::Creating box plot for categorical data (linear), dysbiosis_state vs CITRULBIO_PWY_L_citrulline_biosyn
+2024-07-22 08:12:41.925898 INFO::Creating box plot for categorical data (linear), dysbiosis_state vs PWY_7208_SP_of_pyrimidine_nucleobases_salvage
+2024-07-22 08:12:41.933224 INFO::Creating box plot for categorical data (linear), dysbiosis_state vs P461_PWY_hexitol_fermentation_to_lactate_formate_ethanol__acetate
+2024-07-22 08:12:41.940524 INFO::Creating box plot for categorical data (linear), dysbiosis_state vs PWY_5083_NAD_NADH_phosphorylation__dephosphorylation
+2024-07-22 08:12:41.947894 INFO::Creating box plot for categorical data (linear), dysbiosis_state vs PWY_5973_cis_vaccenate_biosyn
+2024-07-22 08:12:41.955275 INFO::Creating box plot for categorical data (linear), dysbiosis_state vs PWY_4041_beta_glutamyl_cyc
+2024-07-22 08:12:41.96263 INFO::Creating box plot for categorical data (linear), dysbiosis_state vs PWY0_166_SP_of_pyrimidine_dnt_de_novo_biosyn
+2024-07-22 08:12:41.969914 INFO::Creating box plot for categorical data (linear), dysbiosis_state vs PWY_6387_UDP_N_acetylmuramoyl_pentapeptide_biosyn_I
+2024-07-22 08:12:41.977325 INFO::Creating box plot for categorical data (linear), antibiotics vs PWY_7221_guanosine_rnt_de_novo_biosyn
+2024-07-22 08:12:41.990845 INFO::Creating tile plot for categorical data (logistic), antibiotics vs PWY_7242_D_fructuronate_deg
+2024-07-22 08:12:42.003263 INFO::Creating box plot for categorical data (linear), dysbiosis_state vs UDPNAGSYN_PWY_UDP_N_acetyl_D_glucosamine_biosyn_I
+2024-07-22 08:12:42.010676 INFO::Creating box plot for categorical data (linear), dysbiosis_state vs PWY_4984_urea_cyc
+2024-07-22 08:12:42.018008 INFO::Creating box plot for categorical data (linear), dysbiosis_state vs PYRIDNUCSYN_PWY_NAD_biosyn_I
+2024-07-22 08:12:42.025672 INFO::Creating box plot for categorical data (linear), dysbiosis_state vs ANAGLYCOLYSIS_PWY_glycolysis_III
+2024-07-22 08:12:42.033316 INFO::Creating box plot for categorical data (linear), dysbiosis_state vs COA_PWY_1_coenzyme_A_biosyn_II
+2024-07-22 08:12:42.040555 INFO::Creating scatter plot for continuous data (linear), age vs PWY_6151_S_adenosyl_L_methionine_cyc_I
+2024-07-22 08:12:42.048651 INFO::Creating box plot for categorical data (linear), dysbiosis_state vs PWY_5686_UMP_biosyn

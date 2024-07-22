@@ -1,0 +1,164 @@
+2024-07-22 08:05:25.009021 INFO::Writing function arguments to log file
+2024-07-22 08:05:25.009323 DEBUG::Function arguments
+2024-07-22 08:05:25.009467 DEBUG::Output folder: demo_output_ratio
+2024-07-22 08:05:25.009594 DEBUG::Min Abundance: 0.000000
+2024-07-22 08:05:25.009711 DEBUG::Zero Threshold: 0.000000
+2024-07-22 08:05:25.009824 DEBUG::Min Prevalence: 0.000000
+2024-07-22 08:05:25.009942 DEBUG::Normalization: NONE
+2024-07-22 08:05:25.010052 DEBUG::Transform: LOG
+2024-07-22 08:05:25.010162 DEBUG::Max significance: 0.100000
+2024-07-22 08:05:25.010271 DEBUG::Random effects: participant_id
+2024-07-22 08:05:25.010385 DEBUG::Fixed effects: diagnosis,dysbiosis_state,antibiotics,age
+2024-07-22 08:05:25.010499 DEBUG::Group effects:
+2024-07-22 08:05:25.010612 DEBUG::Ordered effects:
+2024-07-22 08:05:25.010728 DEBUG::Formula:
+2024-07-22 08:05:25.010842 DEBUG::Correction method: BH
+2024-07-22 08:05:25.010955 DEBUG::Standardize: TRUE
+2024-07-22 08:05:25.011066 DEBUG::Augment: TRUE
+2024-07-22 08:05:25.011176 DEBUG::Cores: 1
+2024-07-22 08:05:25.011295 DEBUG::Abundance median comparison: TRUE
+2024-07-22 08:05:25.011403 DEBUG::Prevalence median comparison: FALSE
+2024-07-22 08:05:25.011516 DEBUG::Abundance median comparison threshold: 0
+2024-07-22 08:05:25.011626 DEBUG::Prevalence median comparison threshold: 0.25
+2024-07-22 08:05:25.011775 INFO::Verifying options selected are valid
+2024-07-22 08:05:25.012085 INFO::Determining format of input files
+2024-07-22 08:05:25.012352 INFO::Input format is data samples as rows and metadata samples as rows
+2024-07-22 08:05:25.013332 DEBUG::A total of 754 samples were found in both the data and metadata
+2024-07-22 08:05:25.013499 INFO::The following samples were found to have features but no metadata (or feature specific covariates if applicable). They will be removed. CSM5MCV1_P,ESM5GEYW_P,ESM5GEYY_P,MSM5LLIC_P,CSMAIG7X,CSM79HIT,CSM79HJM,CSM79HJO,CSM79HJS,CSM79HR6,CSM79HR8,CSM79HRC,CSM79HRG,CSM7KOO5,CSM7KOO9,CSM7KOOD,CSM7KOOF,CSM7KOOV,CSM9X1ZC,CSM9X237,CSMA9J65,HSM67VEK,HSM6XRT8,HSMA33IC,HSMA33IE,HSMA33LH_TR,HSMA33LH,HSMA33P6,HSMA33RT,HSMA33RX_TR,HSMA33RX,MSM6J2IE,MSM79H5G,MSM79H5K,MSM79H9A,MSM79H9G,MSM79H9M,MSM79H9Q,MSM79H9W,MSM9VZGO,MSM9VZHF,MSM9VZLJ,MSMAPC64,PSM6XBUI,PSM7J14X,PSM7J4EF,CSM79HR2,CSM9X1Z4,MSM9VZHB
+2024-07-22 08:05:25.013867 INFO::The following samples were found to have metadata but no features (or feature specific covariates if applicable). They will be removed. CSM5FZ3N_P,CSM5FZ3R_P,CSM5FZ3V_P,CSM5FZ3X_P,CSM5FZ3Z_P,CSM5FZ42_P,CSM5FZ44_P,CSM5FZ4A_P,CSM5FZ4E_P,CSM5MCUA_P,CSM5MCUS_P,CSM5MCVD_P,CSM5MCVF_P,CSM5MCVJ_P,CSM5MCVL,CSM5MCVZ_P,CSM5MCW4_P,CSM5MCWA_P,CSM5MCWG,CSM5MCWK_P,CSM5MCXB_P,CSM5MCXF_P,CSM5MCXV,CSM5MCXX_P,CSM5MCXZ_P,CSM5MCYI_P,CSM5MCYM_P,CSM5MCYO_P,CSM5MCYQ_P,CSM5MCYS,CSM5MCYU_P,CSM5MCYW,CSM5MCZ5,CSM5MCZ7,CSM5YRY7_P,CSM67U9B,CSM67U9H_P,CSM67U9J,CSM67U9N,CSM67U9P_P,CSM67U9R_P,CSM67U9T_P,CSM67U9V_P,CSM67U9X_P,CSM67UAG,CSM67UAI_P,CSM67UAQ,CSM67UAS,CSM67UB1,CSM67UB5_P,CSM67UB7_P,CSM67UB9_P,CSM67UBB,CSM67UBF,CSM67UBR,CSM67UBX,CSM67UCU_P,CSM67UE3,CSM67UEM,CSM67UEP_P,CSM67UET_P,CSM67UEW_P,CSM67UEW,CSM67UF1_P,CSM67UF1,CSM67UF5,CSM67UFV,CSM67UG8,CSM67UGC,CSM67UH7,CSM79HG5,CSM79HG7_P,CSM79HGD_P,CSM79HGF_P,CSM79HGH_P,CSM79HGJ_P,CSM79HGL_P,CSM79HGN_P,CSM79HGR_P,CSM79HGV_P,CSM79HH2_P,CSM79HHA,CSM79HIH,CSM79HJ2_P,CSM79HJ4_P,CSM79HJ6_P,CSM79HJ8_P,CSM79HJC_P,CSM79HJI_P,CSM79HJY,CSM79HK9,CSM79HKV,CSM79HKX,CSM79HKZ,CSM79HL4,CSM79HL6,CSM79HLI,CSM79HLK,CSM79HLM,CSM79HM1,CSM79HM5_P,CSM79HM7,CSM79HM9_P,CSM79HMN,CSM79HMP,CSM79HN2,CSM79HNE,CSM79HNG_P,CSM79HNI,CSM79HNK,CSM79HNM,CSM79HNW,CSM79HOF,CSM79HOH,CSM79HOJ,CSM79HOT,CSM79HOV,CSM79HOX,CSM79HP2,CSM79HP6,CSM79HPA_TR,CSM79HPM_P,CSM79HPO,CSM79HPQ_P,CSM79HPU,CSM79HQ9,CSM79HQB,CSM79HQR_P,CSM79HQT_P,CSM7CZ2F_P,CSM7KOJE,CSM7KOJQ,CSM7KOJS,CSM7KOK1,CSM7KOK3,CSM7KOK7,CSM7KOKF,CSM7KOKH_P,CSM7KOKL_P,CSM7KOKP_P,CSM7KOKT,CSM7KOL2,CSM7KOLK,CSM7KOLY,CSM7KOMH,CSM7KOMP,CSM7KOMR_P,CSM7KOMV_P,CSM7KOMX,CSM7KOMZ,CSM7KON8,CSM7KONA,CSM7KONS_P,CSM7KONU,CSM7KONW_P,CSM7KOOJ,CSM7KOOL,CSM7KOON,CSM7KOOP,CSM7KOP6,CSM7KOP8,CSM7KOPE,CSM7KOPG,CSM7KOQ1,CSM7KOQ5_P,CSM7KOQP_P,CSM7KOQX,CSM7KOQZ_P,CSM7KOR4_P,CSM7KOR8_P,CSM7KORI,CSM7KORS,CSM7KOS7,CSM7KOSH,CSM7KOSJ,CSM7KOST,CSM7KOTA,CSM7KOTO,CSM7KOU7_P,CSM7KOUB,CSM7KOUJ_P,CSM9X1Y5,CSM9X1ZO,CSM9X1ZQ,CSM9X1ZY,CSM9X211,CSM9X215,CSM9X21L,CSM9X21N,CSM9X21R,CSM9X222,CSM9X22G,CSM9X22I,CSM9X233,CSM9X23H,CSMA8M9R,CSMAAEUA,CSMAE44D,CSMAHYLR,ESM5GEYX_P,ESM5GEZ1_P,ESM5GEZ4_P,ESM5GEZ6_P,ESM5GEZA_P,ESM5MEA9_P,ESM5MEAB_P,ESM5MEB9_P,ESM5MEBE,ESM5MEBI,ESM5MEC3,ESM5MEC7_P,ESM5MEC9,ESM5MECQ,ESM5MEDD,ESM5MEDK,ESM5MEDP_P,ESM5MEDU,ESM718SY,ESM718T9,ESM718TM,ESM718UH,ESM718V4,ESM7F5AE_P,ESM7F5AM,ESM7F5C7,ESM7F5CD,ESM7F5CF,ESM9IEP1,HSM5FZBR_P,HSM5MD3L_P,HSM5MD3Y,HSM5MD43_P,HSM5MD44_P,HSM5MD47_P,HSM5MD49_P,HSM5MD4O,HSM5MD4P_P,HSM5MD4W_P,HSM5MD4Y,HSM5MD5B_P,HSM5MD5D_P,HSM5MD5F_P,HSM5MD5H_P,HSM5MD5X_P,HSM5MD5Z_P,HSM5MD6C,HSM5MD6E_P,HSM5MD6I_P,HSM5MD6K_P,HSM5MD6M,HSM5MD6O_P,HSM5MD6Q,HSM5MD6S_P,HSM5MD6U_P,HSM5MD75,HSM5MD79,HSM5MD7J,HSM5MD7M,HSM5MD7O,HSM5MD7W_P,HSM5MD7Z_P,HSM5MD8B_P,HSM5MD8D_P,HSM5MD8F_P,HSM5MD8H_P,HSM5MD8J_P,HSM5MD8L_P,HSM5MEE5_P,HSM67VCX_P,HSM67VDP,HSM67VDR_P,HSM67VDT_P,HSM67VDT,HSM67VDX_P,HSM67VDZ,HSM67VE4,HSM67VEG,HSM67VEQ,HSM67VEW,HSM67VFF,HSM67VFH,HSM67VFX_P,HSM67VFX,HSM67VG2_P,HSM67VG6_P,HSM67VGA_P,HSM67VGI_P,HSM67VGK_TR,HSM67VHH,HSM67VHK,HSM67VHQ,HSM67VHS,HSM67VI1,HSM67VI5,HSM67VI7,HSM67VID,HSM67VIF,HSM67VIJ_P,HSM6XRQB_P,HSM6XRQC_P,HSM6XRQS,HSM6XRQY,HSM6XRR3,HSM6XRRD,HSM6XRS2,HSM6XRS6,HSM6XRS8,HSM6XRSE,HSM6XRSX_P,HSM6XRSZ_P,HSM6XRT2_P,HSM6XRT4_P,HSM6XRT6_P,HSM6XRTA_P,HSM6XRTC_P,HSM6XRTE_P,HSM6XRTG_P,HSM6XRTG,HSM6XRTO,HSM6XRTS,HSM6XRUV,HSM6XRUX,HSM6XRUZ,HSM6XRV2,HSM6XRVA,HSM6XRVU,HSM7CYWS_P,HSM7CYXA,HSM7CYXE,HSM7CYXG,HSM7CYXO,HSM7CYXQ,HSM7CYXS,HSM7CYY3,HSM7CYY5,HSM7CYYF,HSM7CYYP,HSM7CYYR_P,HSM7CYYV_P,HSM7CYZ5,HSM7CYZ9,HSM7CYZB,HSM7CYZD,HSM7CYZF,HSM7CYZL,HSM7CYZR,HSM7CZ16,HSM7CZ18,HSM7CZ1C,HSM7CZ1E,HSM7CZ1G,HSM7CZ1T_P,HSM7CZ24,HSM7CZ26,HSM7CZ28,HSM7CZ2A,HSM7CZ2E,HSM7CZ2J_P,HSM7CZ2L_P,HSM7CZ2X_P,HSM7CZ2Z,HSM7CZ3G,HSM7J4G8,HSM7J4GP,HSM7J4HA,HSM7J4HE,HSM7J4HG,HSM7J4HI,HSM7J4HK,HSM7J4HW,HSM7J4HY,HSM7J4I7,HSM7J4I9,HSM7J4IU,HSM7J4IW,HSM7J4J9,HSM7J4JF,HSM7J4JN,HSM7J4JP,HSM7J4JT_P,HSM7J4JV_P,HSM7J4K4,HSM7J4KA,HSM7J4KI,HSM7J4KM,HSM7J4KO,HSM7J4LF,HSM7J4LP,HSM7J4M4,HSM7J4M6,HSM7J4MW,HSM7J4NA,HSM7J4NC,HSM7J4NM,HSM7J4O1,HSM7J4O5,HSM7J4O7,HSM7J4OB,HSM7J4OL,HSM7J4ON,HSM7J4OV,HSM7J4OX,HSM7J4P2,HSM7J4PA,HSM7J4PC,HSM7J4PE,HSM7J4PG,HSM7J4PK,HSM7J4PU,HSM7J4Q1,HSM7J4Q3_P,HSM7J4Q7,HSM7J4Q9,HSM7J4QB,HSM7J4QD,HSM7J4QH,HSM7J4QL,HSM7J4QZ,HSM7J4RE,HSMA33IS,HSMA33J1_P,HSMA33J7,HSMA33J9,HSMA33JN,HSMA33JP,HSMA33JZ,HSMA33KM,HSMA33KO,HSMA33KQ,HSMA33KS,HSMA33LP,HSMA33LX,HSMA33LZ,HSMA33MC,HSMA33MI,HSMA33MK,HSMA33MV,HSMA33MX,HSMA33N4,HSMA33NC,HSMA33NG_P,HSMA33NW,HSMA33NY,HSMA33O1,HSMA33OL,HSMA33OP,HSMA33OX,HSMA33P2_P,HSMA33PN,HSMA33PX,HSMA33QM,HSMA33R1,HSMA33R7,HSMA33R9,HSMA33S4,HSMA33SE,MSM5LLD6_P,MSM5LLDE,MSM5LLDI,MSM5LLDU,MSM5LLE3_P,MSM5LLE9_P,MSM5LLER,MSM5LLF2_P,MSM5LLF6,MSM5LLF8,MSM5LLGF_P,MSM5LLGJ_P,MSM5LLGL,MSM5LLGN_P,MSM5LLGR_P,MSM5LLHE_P,MSM5LLI2_P,MSM5LLI4_P,MSM5LLI8_P,MSM5LLIM_P,MSM633FF_P,MSM6J2HD,MSM6J2HF,MSM6J2HH,MSM6J2HJ,MSM6J2HL,MSM6J2HN,MSM6J2IG,MSM6J2II,MSM6J2IK,MSM6J2IM,MSM6J2IY,MSM6J2J1,MSM6J2JB,MSM6J2JF_P,MSM6J2JH_P,MSM6J2JT,MSM6J2K4,MSM6J2K8,MSM6J2KA,MSM6J2LH,MSM6J2LN,MSM6J2LR,MSM6J2LT,MSM6J2LW,MSM6J2LY,MSM6J2M3_P,MSM6J2MD,MSM6J2MF,MSM6J2ML,MSM6J2OH,MSM6J2OJ,MSM6J2OL,MSM6J2ON,MSM6J2OP,MSM6J2PM,MSM6J2PO,MSM6J2PQ_P,MSM6J2PW,MSM6J2Q7,MSM6J2Q9,MSM6J2QB,MSM6J2QL,MSM6J2RA,MSM6J2RK,MSM6J2RM,MSM6J2RQ,MSM6J2RU,MSM6J2SI,MSM79H52_P,MSM79H58,MSM79H5A,MSM79H5S,MSM79H5U,MSM79H63,MSM79H65,MSM79H67,MSM79H69,MSM79H6B,MSM79H6D,MSM79H6H,MSM79H6J,MSM79H6L,MSM79H6N,MSM79H6Y,MSM79H7W,MSM79H85,MSM79H89,MSM79H8B,MSM79H8F,MSM79H8H,MSM79H8J_P,MSM79H8N,MSM79H94_P,MSM79H98,MSM79H9C,MSM79HA1,MSM79HA7,MSM79HAN,MSM79HAR,MSM79HAT,MSM79HBL,MSM79HBN,MSM79HBP,MSM79HBR,MSM79HBT,MSM79HBV,MSM79HBX_P,MSM79HBZ,MSM79HCG,MSM79HCN_P,MSM79HD6_P,MSM79HD8_P,MSM79HDK,MSM79HDO,MSM79HDS,MSM79HDU,MSM79HEA,MSM79HES,MSM79HEW,MSM79HF1_P,MSM79HF3,MSM79HFW,MSM7J16L,MSM7J16N,MSM7J16P,MSM7J16R,MSM9VZEM,MSM9VZEO,MSM9VZF7,MSM9VZFH,MSM9VZFJ_P,MSM9VZFN,MSM9VZFT,MSM9VZGW,MSM9VZH7,MSM9VZHL,MSM9VZHP,MSM9VZHR,MSM9VZHZ,MSM9VZIO,MSM9VZIS,MSM9VZIW,MSM9VZJF_P,MSM9VZJJ_P,MSM9VZL7,MSM9VZLD,MSM9VZLF,MSM9VZLH,MSM9VZLL,MSM9VZLR,MSM9VZLZ,MSM9VZM4_P,MSM9VZMC,MSM9VZME,MSM9VZMS,MSM9VZMW,MSM9VZN4_P,MSM9VZNR,MSM9VZNZ,MSM9VZO2,MSM9VZOI,MSM9VZOM,MSM9VZOO,MSM9VZOW,MSM9VZPN,MSM9VZPT,MSMA267X,MSMA2684,MSMA2688,MSMA26AL,MSMA26AN,MSMA26AP,MSMA26AR,MSMA26AT,MSMA26BD,MSMA26BF,MSMA26BH,MSMA26BJ,MSMA26BL,MSMA26BN,MSMA26BT,MSMA26BV,MSMA26CV,MSMA26CX,MSMA26DG,MSMA26DK,MSMA26EH,MSMA26EN,MSMA26EP,MSMA26ER,MSMA26EZ,MSMAPC55,MSMAPC57,MSMAPC5B,MSMAPC5H,MSMAPC66,MSMAPC6C,MSMAPC6E,MSMAPC6M,MSMAPC6O,MSMAPC7P,MSMB4LXS,MSMB4LZP,MSMB4LZV,MSMB4LZZ,PSM6XBQM_P,PSM6XBQS,PSM6XBR1,PSM6XBRK_P,PSM6XBRM_P,PSM6XBS2_P,PSM6XBS4_P,PSM6XBS8,PSM6XBSA,PSM6XBSC_P,PSM6XBSE_P,PSM6XBSG_P,PSM6XBSK,PSM6XBSS,PSM6XBT1,PSM6XBT5,PSM6XBT7,PSM6XBTB,PSM6XBTF_P,PSM6XBTH_P,PSM6XBTL,PSM6XBTN_P,PSM6XBTR,PSM6XBTT,PSM6XBTX,PSM6XBTZ_P,PSM6XBU2,PSM6XBUM,PSM6XBUO,PSM6XBVM,PSM6XBVO,PSM6XBVQ,PSM6XBVS,PSM6XBVY_P,PSM6XBW1_P,PSM6XBW3,PSM7J127,PSM7J12B,PSM7J12F,PSM7J12V,PSM7J12Z,PSM7J13I,PSM7J13K,PSM7J13Q,PSM7J13U_P,PSM7J13Y_P,PSM7J13Y,PSM7J143_P,PSM7J156,PSM7J158,PSM7J15G,PSM7J15I,PSM7J15K,PSM7J15M,PSM7J163,PSM7J169,PSM7J16B,PSM7J16F,PSM7J16H,PSM7J16W,PSM7J173,PSM7J179,PSM7J17D,PSM7J17F,PSM7J17T,PSM7J19H,PSM7J19R,PSM7J19T,PSM7J19X_P,PSM7J19Z,PSM7J1A4,PSM7J1A6,PSM7J1AO,PSM7J1AQ,PSM7J1AS,PSM7J1B3_P,PSM7J1B7,PSM7J1B9,PSM7J1BD,PSM7J1BJ,PSM7J1BN_P,PSM7J1BP,PSM7J1BV,PSM7J1BX,PSM7J1C2_P,PSM7J1C4,PSM7J1C8,PSM7J1CG,PSM7J1CK_P,PSM7J1CS_P,PSM7J1DF,PSM7J1DL,PSMA263M,PSMA263S,PSMA263U,PSMA264K,PSMA264O,PSMA264Q,PSMA264W,PSMA2651_P,PSMA2653,PSMA2659,PSMA265D,PSMA266O,PSMA2671,PSMA267D,PSMA267F,PSMA26A1,PSMB4MBI,PSMB4MC1,PSMB4MC3
+2024-07-22 08:05:25.014208 DEBUG::Reordering data/metadata to use same sample ordering
+2024-07-22 08:05:25.01543 INFO::Formula for random effects: expr ~ (1 | participant_id)
+2024-07-22 08:05:25.0157 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosis_state + antibiotics + age
+2024-07-22 08:05:25.01607 INFO::Factor detected for categorial metadata 'diagnosis'. Provide a reference argument or manually set factor ordering to change reference level.
+2024-07-22 08:05:25.01628 INFO::Factor detected for categorial metadata 'dysbiosis_state'. Provide a reference argument or manually set factor ordering to change reference level.
+2024-07-22 08:05:25.016477 INFO::Factor detected for categorial metadata 'antibiotics'. Provide a reference argument or manually set factor ordering to change reference level.
+2024-07-22 08:05:25.016661 INFO::Filter data based on min abundance and min prevalence
+2024-07-22 08:05:25.016846 INFO::Total samples in data: 754
+2024-07-22 08:05:25.017032 INFO::Min samples required with min abundance for a feature not to be filtered: 0.000000
+2024-07-22 08:05:25.032447 INFO::Total filtered features: 8
+2024-07-22 08:05:25.032777 INFO::Filtered feature names from abundance and prevalence filtering: P162_PWY_L_glutamate_deg_V, P164_PWY_purine_nucleobases_deg_I, P185_PWY_formaldehyde_assimilation_III, PWY_3781_aerobic_respiration_I, PWY_3801_sucrose_deg_II, PWY_6588_pyruvate_fermentation_to_acetone, PWY_7279_aerobic_respiration_II, PWY_7345_SP_of_anaerobic_sucrose_deg
+2024-07-22 08:05:25.035617 INFO::Total filtered features with variance filtering: 141
+2024-07-22 08:05:25.035923 INFO::Filtered feature names from variance filtering: X1CMET2_PWY_N10_formyl_tetrahydrofolate_biosyn, ANAEROFRUCAT_PWY_homolactic_fermentation, ANAGLYCOLYSIS_PWY_glycolysis_III, ARGININE_SYN4_PWY_L_ornithine_de_novo_biosyn, ARGSYN_PWY_L_arginine_biosyn_I, ARGSYNBSUB_PWY_L_arginine_biosyn_II, ARO_PWY_chorismate_biosyn_I, ASPASN_PWY_SP_of_L_aspartate__L_asparagine_biosyn, BRANCHED_CHAIN_AA_SYN_PWY_SP_of_branched_amino_acid_biosyn, CALVIN_PWY_Calvin_Benson_Bassham_cyc, CITRULBIO_PWY_L_citrulline_biosyn, COA_PWY_coenzyme_A_biosyn_I, COBALSYN_PWY_adenosylcobalamin_salvage_from_cobinamide_I, COMPLETE_ARO_PWY_SP_of_aromatic_amino_acid_biosyn, DAPLYSINESYN_PWY_L_lysine_biosyn_I, DENOVOPURINE2_PWY_SP_of_purine_nt_de_novo_biosyn_II, DTDPRHAMSYN_PWY_dTDP_L_rhamnose_biosyn_I, FASYN_ELONG_PWY_fatty_acid_elongation__saturated, FASYN_INITIAL_PWY_SP_of_fatty_acid_biosyn_initiation, FUCCAT_PWY_fucose_deg, GALACT_GLUCUROCAT_PWY_SP_of_hexuronide__hexuronate_deg, GALACTUROCAT_PWY_D_galacturonate_deg_I, GLCMANNANAUT_PWY_SP_of_N_acetylglucosamine_N_acetylmannosamine__N_acetylneuraminate_deg, GLUCONEO_PWY_gluconeogenesis_I, GLUCOSE1PMETAB_PWY_glucose__glucose_1_phosphate_deg, GLUCUROCAT_PWY_SP_of_beta_D_glucuronide__D_glucuronate_deg, GLYCOGENSYNTH_PWY_glycogen_biosyn_I, GLYCOLYSIS_E_D_SP_of_glycolysis__Entner_Doudoroff, GLYCOLYSIS_glycolysis_I, GLYOXYLATE_BYPASS_glyoxylate_cyc, HISDEG_PWY_L_histidine_deg_I, HISTSYN_PWY_L_histidine_biosyn, ILEUSYN_PWY_L_isoleucine_biosyn_I, MET_SAM_PWY_SP_of_S_adenosyl_L_methionine_biosyn, METSYN_PWY_L_homoserine__L_methionine_biosyn, NAGLIPASYN_PWY_lipid_IVA_biosyn, OANTIGEN_PWY_O_antigen_building_blocks_biosyn, P105_PWY_TCA_cyc_IV, P108_PWY_pyruvate_fermentation_to_propanoate_I, P161_PWY_acetylene_deg, P42_PWY_incomplete_reductive_TCA_cyc, P441_PWY_SP_of_N_acetylneuraminate_deg, P461_PWY_hexitol_fermentation_to_lactate_formate_ethanol__acetate, PANTOSYN_PWY_pantothenate__coenzyme_A_biosyn_I, PENTOSE_P_PWY_pentose_phosphate_pwy, PHOSLIPSYN_PWY_SP_of_phospholipid_biosyn_I, PRPP_PWY_SP_of_histidine_purine__pyrimidine_biosyn, PWY_1042_glycolysis_IV, PWY_1269_CMP_3_deoxy_D_manno_octulosonate_biosyn_I, PWY_2941_L_lysine_biosyn_II, PWY_3001_SP_of_L_isoleucine_biosyn_I, PWY_4041_beta_glutamyl_cyc, PWY_4242_pantothenate__coenzyme_A_biosyn_III, PWY_4981_L_proline_biosyn_II, PWY_4984_urea_cyc, PWY_5030_L_histidine_deg_III, PWY_5083_NAD_NADH_phosphorylation__dephosphorylation, PWY_5100_pyruvate_fermentation_to_acetate__lactate_II, PWY_5101_L_isoleucine_biosyn_II, PWY_5103_L_isoleucine_biosyn_III, PWY_5104_L_isoleucine_biosyn_IV, PWY_5154_L_arginine_biosyn_III, PWY_5173_SP_of_acetyl_CoA_biosyn, PWY_5177_glutaryl_CoA_deg, PWY_5188_tetrapyrrole_biosyn_I, PWY_5347_SP_of_L_methionine_biosyn, PWY_5484_glycolysis_II, PWY_5659_GDP_mannose_biosyn, PWY_5676_acetyl_CoA_fermentation_to_butanoate_II, PWY_5690_TCA_cyc_II, PWY_5723_Rubisco_shunt, PWY_5913_TCA_cyc_VI, PWY_5971_palmitate_biosyn_II, PWY_5973_cis_vaccenate_biosyn, PWY_5989_stearate_biosyn_II, PWY_6123_inosine_5_phosphate_biosyn_I, PWY_6124_inosine_5_phosphate_biosyn_II, PWY_6147_6_hydroxymethyl_dihydropterin_diphosphate_biosyn_I, PWY_6163_chorismate_biosyn_from_3_dehydroquinate, PWY_6168_flavin_biosyn_III, PWY_621_sucrose_deg_III, PWY_6270_isoprene_biosyn_I, PWY_6282_palmitoleate_biosyn_I, PWY_6353_purine_nt_deg_II, PWY_6386_UDP_N_acetylmuramoyl_pentapeptide_biosyn_II, PWY_6507_4_deoxy_L_threo_hex_4_enopyranuronate_deg, PWY_6545_pyrimidine_dnt_de_novo_biosyn_III, PWY_6608_guanosine_nt_deg_III, PWY_6897_thiamin_salvage_II, PWY_6901_SP_of_glucose__xylose_deg, PWY_6936_seleno_amino_acid_biosyn, PWY_6969_TCA_cyc_V, PWY_7184_pyrimidine_dnt_de_novo_biosyn_I, PWY_7187_pyrimidine_dnt_de_novo_biosyn_II, PWY_7196_SP_of_pyrimidine_rns_salvage, PWY_7197_pyrimidine_dnt_phosphorylation, PWY_7199_pyrimidine_dns_salvage, PWY_7211_SP_of_pyrimidine_dnt_de_novo_biosyn, PWY_7234_inosine_5_phosphate_biosyn_III, PWY_7237_myo__chiro__scillo_inositol_deg, PWY_7242_D_fructuronate_deg, PWY_724_SP_of_L_lysine_L_threonine__L_methionine_biosyn_II, PWY_7282_4_amino_2_methyl_5_phosphomethylpyrimidine_biosyn, PWY_7323_SP_of_GDP_mannose_derived_O_antigen_building_blocks_biosyn, PWY_7357_thiamin_formation_from_pyrithiamine__oxythiamine, PWY_7383_anaerobic_energy_metabolism, PWY_7388_octanoyl_acyl_carrier_protein_biosyn, PWY_7400_L_arginine_biosyn_IV, PWY_7456_mannan_deg, PWY_7539_6_hydroxymethyl_dihydropterin_diphosphate_biosyn_III, PWY_7560_methylerythritol_phosphate_pwy_II, PWY_7663_gondoate_biosyn, PWY_7664_oleate_biosyn_IV, PWY_841_SP_of_purine_nt_de_novo_biosyn_I, PWY0_1261_anhydromuropeptides_recycling, PWY0_1297_SP_of_purine_dns_deg, PWY0_1298_SP_of_pyrimidine_dns_deg, PWY0_1479_tRNA_processing, PWY0_1586_peptidoglycan_maturation, PWY0_162_SP_of_pyrimidine_rnt_de_novo_biosyn, PWY0_166_SP_of_pyrimidine_dnt_de_novo_biosyn, PWY0_845_SP_of_pyridoxal_5_phosphate_biosyn__salvage, PWY0_862_dodec_5_enoate_biosyn, PWY4FS_7_phosphatidylglycerol_biosyn_I, PWY4FS_8_phosphatidylglycerol_biosyn_II, PWY66_399_gluconeogenesis_III, PWY66_400_glycolysis_VI, PWY66_409_SP_of_purine_nt_salvage, PWYG_321_mycolate_biosyn, PYRIDNUCSYN_PWY_NAD_biosyn_I, PYRIDOXSYN_PWY_pyridoxal_5_phosphate_biosyn_I, RHAMCAT_PWY_L_rhamnose_deg_I, RIBOSYN2_PWY_flavin_biosyn_I, SALVADEHYPOX_PWY_adenosine_nt_deg_II, SER_GLYSYN_PWY_SP_of_L_serine__glycine_biosyn_I, TCA_GLYOX_BYPASS_SP_of_glyoxylate_bypass__TCA, TCA_TCA_cyc_I, THISYNARA_PWY_SP_of_thiamin_diphosphate_biosyn_III, THRESYN_PWY_SP_of_L_threonine_biosyn, TRNA_CHARGING_PWY_tRNA_charging, UDPNAGSYN_PWY_UDP_N_acetyl_D_glucosamine_biosyn_I
+2024-07-22 08:05:25.036385 INFO::Creating output feature tables folder
+2024-07-22 08:05:25.036683 INFO::Writing filtered data to file demo_output_ratio/features/filtered_data.tsv
+2024-07-22 08:05:25.051431 INFO::Applying z-score to standardize continuous metadata
+2024-07-22 08:05:25.053564 INFO::Running selected normalization method: NONE
+2024-07-22 08:05:25.055381 INFO::Writing filtered, normalized data to file demo_output_ratio/features/filtered_data_norm.tsv
+2024-07-22 08:05:25.070042 INFO::Running selected transform method: LOG
+2024-07-22 08:05:25.076198 INFO::Writing filtered, normalized, transformed data to file demo_output_ratio/features/filtered_data_norm_transformed.tsv
+2024-07-22 08:05:25.091112 INFO::Running the linear model (LM) component
+2024-07-22 08:05:25.092482 INFO::Fitting model to feature number 1, COA_PWY_1_coenzyme_A_biosyn_II
+2024-07-22 08:05:25.117916 INFO::Fitting model to feature number 2, NONMEVIPP_PWY_methylerythritol_phosphate_pwy_I
+2024-07-22 08:05:25.14085 INFO::Fitting model to feature number 3, NONOXIPENT_PWY_pentose_phosphate_pwy
+2024-07-22 08:05:25.163945 INFO::Fitting model to feature number 4, PANTO_PWY_phosphopantothenate_biosyn_I
+2024-07-22 08:05:25.187495 INFO::Fitting model to feature number 5, PEPTIDOGLYCANSYN_PWY_peptidoglycan_biosyn_I
+2024-07-22 08:05:25.210982 INFO::Fitting model to feature number 6, PWY_2942_L_lysine_biosyn_III
+2024-07-22 08:05:25.239642 INFO::Fitting model to feature number 7, PWY_3841_folate_transformations_II
+2024-07-22 08:05:25.262419 INFO::Fitting model to feature number 8, PWY_5097_L_lysine_biosyn_VI
+2024-07-22 08:05:25.284883 INFO::Fitting model to feature number 9, PWY_5667_CDP_diacylglycerol_biosyn_I
+2024-07-22 08:05:25.307374 INFO::Fitting model to feature number 10, PWY_5686_UMP_biosyn
+2024-07-22 08:05:25.329789 INFO::Fitting model to feature number 11, PWY_5695_urate_biosyn_inosine_5_phosphate_deg
+2024-07-22 08:05:25.352748 INFO::Fitting model to feature number 12, PWY_6121_5_aminoimidazole_rnt_biosyn_I
+2024-07-22 08:05:25.380924 INFO::Fitting model to feature number 13, PWY_6122_5_aminoimidazole_rnt_biosyn_II
+2024-07-22 08:05:25.405724 INFO::Fitting model to feature number 14, PWY_6125_SP_of_guanosine_nt_de_novo_biosyn_II
+2024-07-22 08:05:25.43122 INFO::Fitting model to feature number 15, PWY_6126_SP_of_adenosine_nt_de_novo_biosyn_II
+2024-07-22 08:05:25.460438 INFO::Fitting model to feature number 16, PWY_6151_S_adenosyl_L_methionine_cyc_I
+2024-07-22 08:05:25.486418 INFO::Fitting model to feature number 17, PWY_6277_SP_of_5_aminoimidazole_rnt_biosyn
+2024-07-22 08:05:25.515085 INFO::Fitting model to feature number 18, PWY_6317_galactose_deg_I
+2024-07-22 08:05:25.537803 INFO::Fitting model to feature number 19, PWY_6385_peptidoglycan_biosyn_III
+2024-07-22 08:05:25.561046 INFO::Fitting model to feature number 20, PWY_6387_UDP_N_acetylmuramoyl_pentapeptide_biosyn_I
+2024-07-22 08:05:25.584973 INFO::Fitting model to feature number 21, PWY_6527_stachyose_deg
+2024-07-22 08:05:25.61013 INFO::Fitting model to feature number 22, PWY_6609_adenine__adenosine_salvage_III
+2024-07-22 08:05:25.642215 INFO::Fitting model to feature number 23, PWY_6700_queuosine_biosyn
+2024-07-22 08:05:25.673991 INFO::Fitting model to feature number 24, PWY_6703_preQ0_biosyn
+2024-07-22 08:05:25.699023 INFO::Fitting model to feature number 25, PWY_6737_starch_deg_V
+2024-07-22 08:05:25.722583 INFO::Fitting model to feature number 26, PWY_7111_pyruvate_fermentation_to_isobutanol
+2024-07-22 08:05:25.746042 INFO::Fitting model to feature number 27, PWY_7208_SP_of_pyrimidine_nucleobases_salvage
+2024-07-22 08:05:25.769573 INFO::Fitting model to feature number 28, PWY_7219_adenosine_rnt_de_novo_biosyn
+2024-07-22 08:05:25.797062 INFO::Fitting model to feature number 29, PWY_7220_adenosine_dnt_de_novo_biosyn_II
+2024-07-22 08:05:25.820632 INFO::Fitting model to feature number 30, PWY_7221_guanosine_rnt_de_novo_biosyn
+2024-07-22 08:05:25.844514 INFO::Fitting model to feature number 31, PWY_7222_guanosine_dnt_de_novo_biosyn_II
+2024-07-22 08:05:25.868503 INFO::Fitting model to feature number 32, PWY_7228_SP_of_guanosine_nt_de_novo_biosyn_I
+2024-07-22 08:05:25.891989 INFO::Fitting model to feature number 33, PWY_7229_SP_of_adenosine_nt_de_novo_biosyn_I
+2024-07-22 08:05:25.915675 INFO::Fitting model to feature number 34, PWY0_1296_purine_rns_deg
+2024-07-22 08:05:25.943307 INFO::Fitting model to feature number 35, PWY0_1319_CDP_diacylglycerol_biosyn_II
+2024-07-22 08:05:25.966558 INFO::Fitting model to feature number 36, PWY66_422_D_galactose_deg_V
+2024-07-22 08:05:25.989276 INFO::Fitting model to feature number 37, VALSYN_PWY_L_valine_biosyn
+2024-07-22 08:05:26.01338 INFO::Performing tests against medians
+2024-07-22 08:05:26.139847 INFO::Counting total values for each feature
+2024-07-22 08:05:26.1436 INFO::Running the logistic model component
+2024-07-22 08:05:26.144468 INFO::Fitting model to feature number 1, COA_PWY_1_coenzyme_A_biosyn_II
+2024-07-22 08:05:27.075762 INFO::Fitting model to feature number 2, NONMEVIPP_PWY_methylerythritol_phosphate_pwy_I
+2024-07-22 08:05:28.199992 INFO::Fitting model to feature number 3, NONOXIPENT_PWY_pentose_phosphate_pwy
+2024-07-22 08:05:29.334469 INFO::Fitting model to feature number 4, PANTO_PWY_phosphopantothenate_biosyn_I
+2024-07-22 08:05:33.030989 WARNING::Fitting problem for feature 4 returning NA
+2024-07-22 08:05:33.03257 INFO::Fitting model to feature number 5, PEPTIDOGLYCANSYN_PWY_peptidoglycan_biosyn_I
+2024-07-22 08:05:34.064206 INFO::Fitting model to feature number 6, PWY_2942_L_lysine_biosyn_III
+2024-07-22 08:05:36.742121 INFO::Fitting model to feature number 7, PWY_3841_folate_transformations_II
+2024-07-22 08:05:38.021466 INFO::Fitting model to feature number 8, PWY_5097_L_lysine_biosyn_VI
+2024-07-22 08:05:39.731881 WARNING::Fitting problem for feature 8 returning NA
+2024-07-22 08:05:39.733441 INFO::Fitting model to feature number 9, PWY_5667_CDP_diacylglycerol_biosyn_I
+2024-07-22 08:05:40.414409 INFO::Fitting model to feature number 10, PWY_5686_UMP_biosyn
+2024-07-22 08:05:42.105089 WARNING::Fitting problem for feature 10 returning NA
+2024-07-22 08:05:42.106448 INFO::Fitting model to feature number 11, PWY_5695_urate_biosyn_inosine_5_phosphate_deg
+2024-07-22 08:05:44.62094 INFO::Fitting model to feature number 12, PWY_6121_5_aminoimidazole_rnt_biosyn_I
+2024-07-22 08:05:46.868353 INFO::Fitting model to feature number 13, PWY_6122_5_aminoimidazole_rnt_biosyn_II
+2024-07-22 08:05:49.120697 INFO::Fitting model to feature number 14, PWY_6125_SP_of_guanosine_nt_de_novo_biosyn_II
+2024-07-22 08:05:49.788828 INFO::Fitting model to feature number 15, PWY_6126_SP_of_adenosine_nt_de_novo_biosyn_II
+2024-07-22 08:05:50.261656 INFO::Fitting model to feature number 16, PWY_6151_S_adenosyl_L_methionine_cyc_I
+2024-07-22 08:05:51.476632 INFO::Fitting model to feature number 17, PWY_6277_SP_of_5_aminoimidazole_rnt_biosyn
+2024-07-22 08:05:53.730999 INFO::Fitting model to feature number 18, PWY_6317_galactose_deg_I
+2024-07-22 08:05:54.580221 INFO::Fitting model to feature number 19, PWY_6385_peptidoglycan_biosyn_III
+2024-07-22 08:05:56.505024 INFO::Fitting model to feature number 20, PWY_6387_UDP_N_acetylmuramoyl_pentapeptide_biosyn_I
+2024-07-22 08:05:57.514348 INFO::Fitting model to feature number 21, PWY_6527_stachyose_deg
+2024-07-22 08:05:58.109866 INFO::Fitting model to feature number 22, PWY_6609_adenine__adenosine_salvage_III
+2024-07-22 08:05:58.232203 INFO::Fitting model to feature number 23, PWY_6700_queuosine_biosyn
+2024-07-22 08:06:05.275539 INFO::Fitting model to feature number 24, PWY_6703_preQ0_biosyn
+2024-07-22 08:06:05.863678 INFO::Fitting model to feature number 25, PWY_6737_starch_deg_V
+2024-07-22 08:06:22.151255 WARNING::Fitting problem for feature 25 returning NA
+2024-07-22 08:06:22.153887 INFO::Fitting model to feature number 26, PWY_7111_pyruvate_fermentation_to_isobutanol
+2024-07-22 08:06:24.708159 INFO::Fitting model to feature number 27, PWY_7208_SP_of_pyrimidine_nucleobases_salvage
+2024-07-22 08:06:33.391254 INFO::Fitting model to feature number 28, PWY_7219_adenosine_rnt_de_novo_biosyn
+2024-07-22 08:06:33.392543 INFO::Fitting model to feature number 29, PWY_7220_adenosine_dnt_de_novo_biosyn_II
+2024-07-22 08:06:33.881794 INFO::Fitting model to feature number 30, PWY_7221_guanosine_rnt_de_novo_biosyn
+2024-07-22 08:06:35.586969 WARNING::Fitting problem for feature 30 returning NA
+2024-07-22 08:06:35.588294 INFO::Fitting model to feature number 31, PWY_7222_guanosine_dnt_de_novo_biosyn_II
+2024-07-22 08:06:36.066387 INFO::Fitting model to feature number 32, PWY_7228_SP_of_guanosine_nt_de_novo_biosyn_I
+2024-07-22 08:06:37.605091 INFO::Fitting model to feature number 33, PWY_7229_SP_of_adenosine_nt_de_novo_biosyn_I
+2024-07-22 08:06:38.334529 INFO::Fitting model to feature number 34, PWY0_1296_purine_rns_deg
+2024-07-22 08:06:39.972994 INFO::Fitting model to feature number 35, PWY0_1319_CDP_diacylglycerol_biosyn_II
+2024-07-22 08:06:40.648659 INFO::Fitting model to feature number 36, PWY66_422_D_galactose_deg_V
+2024-07-22 08:06:40.780951 INFO::Fitting model to feature number 37, VALSYN_PWY_L_valine_biosyn
+2024-07-22 08:06:41.828566 INFO::Counting total values for each feature
+2024-07-22 08:06:41.837305 INFO::Writing residuals to file demo_output_ratio/fits/residuals_LM.rds
+2024-07-22 08:06:41.844491 INFO::Writing fitted values to file demo_output_ratio/fits/fitted_LM.rds
+2024-07-22 08:06:41.847471 INFO::Writing extracted random effects to file demo_output_ratio/fits/ranef_LM.rds
+2024-07-22 08:06:41.848455 INFO::Writing residuals to file demo_output_ratio/fits/residuals_logistic.rds
+2024-07-22 08:06:41.85658 INFO::Writing fitted values to file demo_output_ratio/fits/fitted_logistic.rds
+2024-07-22 08:06:41.867261 INFO::Writing extracted random effects to file demo_output_ratio/fits/ranef_logistic.rds
+2024-07-22 08:06:41.869663 INFO::Writing all the results to file (ordered by increasing joint q-values): demo_output_ratio/all_results.tsv
+2024-07-22 08:06:41.874646 INFO::Writing the significant results without errors (those which are less than or equal to the threshold of 0.100000 ) to file (ordered by increasing joint q-values): demo_output_ratio/significant_results.tsv
+2024-07-22 08:06:41.875267 INFO::Creating output figures folder
+2024-07-22 08:06:41.875859 INFO::Writing summary plot of significant results to file: demo_output_ratio/figures/summary_plot.pdf
+2024-07-22 08:06:42.928008 INFO::Writing association plots (one for each significant association) to output folder: demo_output_ratio/figures
+2024-07-22 08:06:42.928834 INFO::Plotting associations from most to least significant, grouped by metadata
+2024-07-22 08:06:42.931098 INFO::Creating box plot for categorical data (linear), dysbiosis_state vs NONMEVIPP_PWY_methylerythritol_phosphate_pwy_I
+2024-07-22 08:06:42.939342 INFO::Creating box plot for categorical data (linear), dysbiosis_state vs PWY_2942_L_lysine_biosyn_III
+2024-07-22 08:06:42.947088 INFO::Creating box plot for categorical data (linear), dysbiosis_state vs PWY_7228_SP_of_guanosine_nt_de_novo_biosyn_I
+2024-07-22 08:06:42.95466 INFO::Creating box plot for categorical data (linear), dysbiosis_state vs PWY_5097_L_lysine_biosyn_VI
+2024-07-22 08:06:42.967529 INFO::Creating box plot for categorical data (linear), dysbiosis_state vs PWY_6387_UDP_N_acetylmuramoyl_pentapeptide_biosyn_I
+2024-07-22 08:06:42.975682 INFO::Creating box plot for categorical data (linear), dysbiosis_state vs PWY66_422_D_galactose_deg_V
+2024-07-22 08:06:42.983074 INFO::Creating box plot for categorical data (linear), dysbiosis_state vs PWY_7221_guanosine_rnt_de_novo_biosyn
+2024-07-22 08:06:42.99043 INFO::Creating box plot for categorical data (linear), dysbiosis_state vs PWY_7208_SP_of_pyrimidine_nucleobases_salvage
+2024-07-22 08:06:42.997849 INFO::Creating box plot for categorical data (linear), antibiotics vs PWY_7221_guanosine_rnt_de_novo_biosyn
+2024-07-22 08:06:43.005152 INFO::Creating box plot for categorical data (linear), dysbiosis_state vs COA_PWY_1_coenzyme_A_biosyn_II
+2024-07-22 08:06:43.012262 INFO::Creating scatter plot for continuous data (linear), age vs PWY_6151_S_adenosyl_L_methionine_cyc_I
+2024-07-22 08:06:43.020803 INFO::Creating box plot for categorical data (linear), dysbiosis_state vs PWY_6527_stachyose_deg
+2024-07-22 08:06:43.028098 INFO::Creating scatter plot for continuous data (linear), age vs PWY_3841_folate_transformations_II
+2024-07-22 08:06:43.036268 INFO::Creating box plot for categorical data (linear), dysbiosis_state vs PWY_5686_UMP_biosyn
+2024-07-22 08:06:43.043442 INFO::Creating scatter plot for continuous data (linear), age vs PWY_5686_UMP_biosyn
+2024-07-22 08:06:43.051265 INFO::Creating scatter plot for continuous data (linear), age vs PWY_2942_L_lysine_biosyn_III
+2024-07-22 08:06:43.063668 INFO::Creating box plot for categorical data (linear), antibiotics vs PWY_7220_adenosine_dnt_de_novo_biosyn_II
+2024-07-22 08:06:43.072283 INFO::Creating box plot for categorical data (linear), antibiotics vs PWY_7222_guanosine_dnt_de_novo_biosyn_II
+2024-07-22 08:06:43.079521 INFO::Creating box plot for categorical data (linear), antibiotics vs PWY_6125_SP_of_guanosine_nt_de_novo_biosyn_II
+2024-07-22 08:06:43.086735 INFO::Creating box plot for categorical data (linear), dysbiosis_state vs PEPTIDOGLYCANSYN_PWY_peptidoglycan_biosyn_I
