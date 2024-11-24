@@ -163,7 +163,7 @@ includes some of the fields.
 ```{R, cache=TRUE}
 ### RNA abundances
 input_data <- system.file(
-    'extdata','HMP2_pwyRNA.tsv', package="maaslin3")
+    'extdata','HMP2_pwyRNA.tsv', package="maaslin3_tutorial_files")
 df_input_data = read.table(file = input_data,
                         header = TRUE,
                         sep = "\t",
