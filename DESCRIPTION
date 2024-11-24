@@ -1,0 +1,18 @@
+Package: maaslin3_tutorial_files
+Title: "Tutorial files for MaAsLin 3"
+Year: 2024
+Version: 0.99.0
+Authors@R: c(
+  person("William", "Nickols", email = "willnickols@g.harvard.edu", role = c("aut", "cre"), comment=c(ORCID="0000-0001-8214-9746")), 
+  person("Jacob", "Nearing", email = "nearing@broadinstitute.org", role = "aut")
+  )
+Depends: R (>= 4.4)
+Description: This directory houses the tutorial files for MaAsLin 3, which can be pulled when running the MTX model.
+License: MIT + file LICENSE
+Imports:
+Suggests: knitr
+VignetteBuilder: knitr
+URL: http://huttenhower.sph.harvard.edu/maaslin3
+BugReports: https://github.com/biobakery/maaslin3/issues
+NeedsCompilation: no
+Packaged: 2024-07-16 15:01:54 UTC; williamnickols
