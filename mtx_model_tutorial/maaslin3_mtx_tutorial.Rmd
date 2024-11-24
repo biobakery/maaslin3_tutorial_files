@@ -99,7 +99,7 @@ install_github("biobakery/maaslin3_tutorial_files")
 ```
 
 ```{r, eval=TRUE, cache = FALSE, echo=FALSE}
-for (lib in c('maaslin3', 'dplyr', 'ggplot2', 'knitr')) {
+for (lib in c('maaslin3', 'dplyr', 'ggplot2', 'knitr', 'maaslin3TutorialFiles')) {
     suppressPackageStartupMessages(require(lib, character.only = TRUE))
 }
 ```
@@ -163,7 +163,7 @@ includes some of the fields.
 ```{R, cache=TRUE}
 ### RNA abundances
 input_data <- system.file(
-    'extdata','HMP2_pwyRNA.tsv', package="maaslin3_tutorial_files")
+    'extdata','HMP2_pwyRNA.tsv', package="maaslin3TutorialFiles")
 df_input_data = read.table(file = input_data,
                         header = TRUE,
                         sep = "\t",
@@ -173,7 +173,7 @@ df_input_data[1:5, 1:5]
 
 # RNA/DNA ratio data
 input_dataratio <- system.file(
-    'extdata','HMP2_pwy.RNA_DNA_ratio.tsv', package="maaslin3")
+    'extdata','HMP2_pwy.RNA_DNA_ratio.tsv', package="maaslin3TutorialFiles")
 df_input_dataratio = read.table(file = input_dataratio,
                                 header = TRUE,
                                 sep = "\t",
@@ -184,7 +184,7 @@ df_input_dataratio[df_input_dataratio == 0] <- NA
 
 # Metadata from the HMP2
 input_metadata <-system.file(
-    'extdata','HMP2_metadata.tsv', package="maaslin3")
+    'extdata','HMP2_metadata.tsv', package="maaslin3TutorialFiles")
 df_input_metadata = read.table(file             = input_metadata,
                             header           = TRUE,
                             sep              = "\t",
@@ -203,7 +203,7 @@ df_input_metadata[1:5, 1:5]
 
 # DNA data
 input_dnadata <- system.file(
-    'extdata','HMP2_pwyDNA.tsv', package="maaslin3")
+    'extdata','HMP2_pwyDNA.tsv', package="maaslin3TutorialFiles")
 df_input_dnadata = read.table(file             = input_dnadata,
                             header           = TRUE,
                             sep              = "\t",
